@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Berkay Kalender — Game Designer & Technical Artist</title>
-<meta name="description" content="Portfolio of Berkay Kalender — Game Designer, Technical Artist & Illustrator combining psychology with interactive media. Creator of CHLORINE, WORN, The Hatman, and InkVision.">
-<meta name="keywords" content="game designer, technical artist, illustrator, unreal engine, unity, cinematic, psychology, portfolio, berkay kalender">
-<meta property="og:title" content="Berkay Kalender — Game Designer & Technical Artist">
-<meta property="og:description" content="Where psychology meets pixels. Game design, cinematics, illustration, and AI-driven creative pipelines.">
-<meta property="og:type" content="website">
-<link rel="canonical" href="https://www.fancymultimedia.design/">
 
-<!-- Structured Data for SEO -->
-<script type="application/ld+json">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berkay Kalender — Game Designer & Technical Artist</title>
+  <meta name="description"
+    content="Portfolio of Berkay Kalender — Game Designer, Technical Artist & Illustrator combining psychology with interactive media. Creator of CHLORINE, WORN, The Hatman, and InkVision.">
+  <meta name="keywords"
+    content="game designer, technical artist, illustrator, unreal engine, unity, cinematic, psychology, portfolio, berkay kalender">
+  <meta property="og:title" content="Berkay Kalender — Game Designer & Technical Artist">
+  <meta property="og:description"
+    content="Where psychology meets pixels. Game design, cinematics, illustration, and AI-driven creative pipelines.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.fancymultimedia.design/">
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -33,1658 +37,2077 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
 
-<style>
-/* ═══════════════════════════════════════════
+  <style>
+    /* ═══════════════════════════════════════════
    RESET & VARIABLES
    ═══════════════════════════════════════════ */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-:root {
-  --bg-dark: #0a0a0f;
-  --bg-blue: #1a3aff;
-  --bg-elevated: #12121a;
-  --surface: #1c1c28;
-  --text-white: #f5f2eb;
-  --text-gray: #8b8898;
-  --text-muted: #4a4658;
-  --accent-cyan: #00e8d4;
-  --accent-orange: #ff6a3d;
-  --accent-yellow: #ffd84d;
-  --accent-pink: #ff3d6e;
-  --font-display: 'Bebas Neue', sans-serif;
-  --font-body: 'Space Grotesk', sans-serif;
-  --font-serif: 'Instrument Serif', serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --nav-height: 60px;
-}
+    :root {
+      --bg-dark: #0a0a0f;
+      --bg-cursor: #31e7c3;
+      --bg-blue: #1a3aff;
+      --bg-elevated: #171930;
+      --surface: #1c1c28;
+      --text-white: #f5f2eb;
+      --text-gray: #dcdbe0;
+      --text-muted: #d3fffb;
+      --accent-white: rgb(211, 224, 255);
+      --accent-orange: #ff6a3d;
+      --accent-yellow: #ffd84d;
+      --accent-pink: #ff3d6e;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body: 'Space Grotesk', sans-serif;
+      --font-serif: 'Instrument Serif', serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --nav-height: 60px;
+    }
 
-html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-body {
-  background: var(--bg-dark);
-  color: var(--text-white);
-  font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.6;
-  overflow-x: hidden;
-  cursor: none;
-}
+    body {
+      background: var(--bg-dark);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      cursor: none;
+    }
 
-@media (max-width: 900px) {
-  body { cursor: auto; }
-}
+    @media (max-width: 900px) {
+      body {
+        cursor: auto;
+      }
+    }
 
-a { color: inherit; text-decoration: none; cursor: none; }
-img { display: block; max-width: 100%; }
-::selection { background: var(--accent-cyan); color: var(--bg-dark); }
+    a {
+      color: inherit;
+      text-decoration: none;
+      cursor: none;
+    }
 
-/* ═══════════════════════════════════════════
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    ::selection {
+      background: var(--accent-cyan);
+      color: var(--bg-cursor);
+    }
+
+    /* ═══════════════════════════════════════════
    CUSTOM CURSOR
    ═══════════════════════════════════════════ */
-.cursor {
-  width: 12px; height: 12px;
-  background: var(--accent-cyan);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 99999;
-  mix-blend-mode: difference;
-  transition: transform 0.2s var(--ease-expo);
-}
-.cursor-follow {
-  width: 44px; height: 44px;
-  border: 1.5px solid rgba(0,232,212,0.5);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 99998;
-  transition: width 0.35s var(--ease-expo), height 0.35s var(--ease-expo),
-              border-color 0.3s, background 0.3s;
-}
-.cursor-follow.active {
-  width: 70px; height: 70px;
-  background: rgba(0,232,212,0.08);
-  border-color: var(--accent-cyan);
-}
-@media (max-width: 900px) {
-  .cursor, .cursor-follow { display: none !important; }
-  a, button { cursor: pointer; }
-}
+    .cursor {
+      width: 12px;
+      height: 12px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 99999;
+      mix-blend-mode: difference;
+      transition: transform 0.2s var(--ease-expo);
+    }
 
-/* ═══════════════════════════════════════════
+    .cursor-follow {
+      width: 44px;
+      height: 44px;
+      border: 1.5px solid rgba(0, 232, 212, 0.5);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 99998;
+      transition: width 0.35s var(--ease-expo), height 0.35s var(--ease-expo),
+        border-color 0.3s, background 0.3s;
+    }
+
+    .cursor-follow.active {
+      width: 70px;
+      height: 70px;
+      background: rgba(0, 232, 212, 0.08);
+      border-color: var(--accent-cyan);
+    }
+
+    @media (max-width: 900px) {
+
+      .cursor,
+      .cursor-follow {
+        display: none !important;
+      }
+
+      a,
+      button {
+        cursor: pointer;
+      }
+    }
+
+    /* ═══════════════════════════════════════════
    GRAIN OVERLAY
    ═══════════════════════════════════════════ */
-.grain {
-  position: fixed; inset: 0;
-  z-index: 99990;
-  pointer-events: none;
-  opacity: 0.03;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-}
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 99990;
+      pointer-events: none;
+      opacity: 0.03;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+    }
 
-/* ═══════════════════════════════════════════
+    /* ═══════════════════════════════════════════
    NAVIGATION
    ═══════════════════════════════════════════ */
-.nav {
-  position: fixed; top: 0; left: 0; right: 0;
-  height: var(--nav-height);
-  z-index: 9000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2.5rem;
-  background: rgba(10,10,15,0.85);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  transition: transform 0.4s var(--ease-expo);
-}
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-height);
+      z-index: 9000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      background: rgba(10, 10, 15, 0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      transition: transform 0.4s var(--ease-expo);
+    }
 
-.nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  letter-spacing: 0.06em;
-  color: var(--text-white);
-}
-.nav-logo span { color: var(--accent-cyan); }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: 0.06em;
+      color: var(--text-white);
+    }
 
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-.nav-links a {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-gray);
-  transition: color 0.3s;
-  position: relative;
-}
-.nav-links a:hover, .nav-links a.active { color: var(--text-white); }
-.nav-links a::after {
-  content: ''; position: absolute;
-  bottom: -4px; left: 0;
-  width: 0; height: 2px;
-  background: var(--accent-cyan);
-  transition: width 0.3s var(--ease-expo);
-}
-.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+    .nav-logo span {
+      color: var(--accent-cyan);
+    }
 
-.nav-cta {
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  background: var(--text-white);
-  color: var(--bg-dark);
-  padding: 0.6rem 1.4rem;
-  border: none;
-  border-radius: 4px;
-  transition: background 0.3s, transform 0.3s;
-}
-.nav-cta:hover {
-  background: var(--accent-cyan);
-  transform: translateY(-1px);
-}
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
 
-.nav-burger {
-  display: none;
-  background: none; border: none;
-  flex-direction: column; gap: 5px;
-  padding: 8px;
-}
-.nav-burger span {
-  width: 24px; height: 2px;
-  background: var(--text-white);
-  transition: all 0.3s;
-  display: block;
-}
+    .nav-links a {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      transition: color 0.3s;
+      position: relative;
+    }
 
-@media (max-width: 900px) {
-  .nav { padding: 0 1.2rem; }
-  .nav-links, .nav-cta { display: none; }
-  .nav-burger { display: flex; }
-}
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-white);
+    }
 
-/* Mobile menu */
-.mobile-menu {
-  position: fixed; inset: 0;
-  background: rgba(10,10,15,0.97);
-  z-index: 8999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
-}
-.mobile-menu.open { opacity: 1; pointer-events: all; }
-.mobile-menu a {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  color: var(--text-white);
-  letter-spacing: 0.05em;
-}
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-cyan);
+      transition: width 0.3s var(--ease-expo);
+    }
 
-/* ═══════════════════════════════════════════
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--text-white);
+      color: var(--bg-dark);
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 4px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-cyan);
+      transform: translateY(-1px);
+    }
+
+    .nav-burger {
+      display: none;
+      background: none;
+      border: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+    }
+
+    .nav-burger span {
+      width: 24px;
+      height: 2px;
+      background: var(--text-white);
+      transition: all 0.3s;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .nav {
+        padding: 0 1.2rem;
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .nav-burger {
+        display: flex;
+      }
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: rgba(10, 10, 15, 0.97);
+      z-index: 8999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s;
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--text-white);
+      letter-spacing: 0.05em;
+    }
+
+    /* ═══════════════════════════════════════════
    HERO SECTION — "HEY!" style
    ═══════════════════════════════════════════ */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  padding: var(--nav-height) 0 0;
-}
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: var(--nav-height) 0 0;
+    }
 
-.hero-bg {
-  position: absolute; inset: 0;
-  background: url('hero-bg.png') center center / cover no-repeat;
-  z-index: 0;
-}
-/* Darken left side so text is readable */
-.hero-bg::after {
-  content: '';
-  position: absolute; inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(10,10,15,0.82) 0%,
-    rgba(10,10,15,0.55) 50%,
-    rgba(10,10,15,0.2) 100%
-  );
-}
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('hero-bg.png') center center / cover no-repeat;
+      z-index: 0;
+    }
 
-/* Animated stars/particles */
-.hero-particles {
-  position: absolute; inset: 0; z-index: 1;
-  overflow: hidden;
-}
-.particle {
-  position: absolute;
-  width: 2px; height: 2px;
-  background: var(--accent-cyan);
-  border-radius: 50%;
-  opacity: 0;
-  animation: particleFade 4s ease-in-out infinite;
-}
+    /* Darken left side so text is readable */
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg,
+          rgba(10, 10, 15, 0.82) 0%,
+          rgba(10, 10, 15, 0.55) 50%,
+          rgba(10, 10, 15, 0.2) 100%);
+    }
 
-@keyframes particleFade {
-  0%, 100% { opacity: 0; transform: translateY(0) scale(1); }
-  50% { opacity: 0.8; transform: translateY(-30px) scale(1.5); }
-}
+    /* Animated stars/particles */
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
 
-.hero-content {
-  position: relative; z-index: 2;
-  max-width: 750px;
-  padding: 0 3rem;
-  width: 100%;
-}
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--accent-white);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFade 4s ease-in-out infinite;
+    }
 
-.hero-left {
-  max-width: 650px;
-}
+    @keyframes particleFade {
 
-.hero-hey {
-  font-family: var(--font-display);
-  font-size: clamp(6rem, 18vw, 14rem);
-  line-height: 0.85;
-  letter-spacing: -0.02em;
-  color: var(--text-white);
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  transform: translateY(60px);
-  animation: heroReveal 1s var(--ease-expo) 0.3s forwards;
-}
+      0%,
+      100% {
+        opacity: 0;
+        transform: translateY(0) scale(2);
+      }
 
-.hero-intro-box {
-  border: 1.5px dashed var(--text-muted);
-  padding: 1.8rem 2rem;
-  border-radius: 8px;
-  position: relative;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: heroReveal 1s var(--ease-expo) 0.6s forwards;
-}
+      50% {
+        opacity: 0.8;
+        transform: translateY(-30px) scale(2.5);
+      }
+    }
 
-.hero-intro-box p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--text-gray);
-}
-.hero-intro-box strong {
-  color: var(--text-white);
-  font-weight: 600;
-}
-.hero-intro-box .hl { color: var(--accent-cyan); }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 750px;
+      padding: 0 3rem;
+      width: 100%;
+    }
 
-@keyframes heroReveal {
-  to { opacity: 1; transform: translateY(0); }
-}
+    .hero-left {
+      max-width: 650px;
+    }
 
-.hero-scroll-indicator {
-  position: absolute;
-  bottom: 2rem; left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.6rem;
-  opacity: 0;
-  animation: heroReveal 1s var(--ease-expo) 1.2s forwards;
-}
-.hero-scroll-indicator span {
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-.scroll-arrow {
-  width: 1px; height: 50px;
-  background: linear-gradient(to bottom, var(--accent-cyan), transparent);
-  animation: scrollBounce 2s ease-in-out infinite;
-}
-@keyframes scrollBounce {
-  0%, 100% { transform: scaleY(0.5); opacity: 0.3; }
-  50% { transform: scaleY(1); opacity: 1; }
-}
+    .hero-hey {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 18vw, 14rem);
+      line-height: 0.85;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      transform: translateY(60px);
+      animation: heroReveal 1s var(--ease-expo) 0.3s forwards;
+    }
 
-@media (max-width: 900px) {
-  .hero-content { padding: 0 1.5rem; }
-  .hero-hey { font-size: 5rem; }
-}
+    .hero-intro-box {
+      /*border: 1.5px dashed var(--text-muted);
+      padding: 1.8rem 2rem;
+      border-radius: 8px;
+      position: relative;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: heroReveal 1s var(--ease-expo) 0.6s forwards;*/
+    }
 
-/* ═══════════════════════════════════════════
+    .hero-intro-box p {
+      font-size: 0.95rem;
+      /*line-height: 1.7;*/
+      color: var(--text-gray);
+    }
+
+    .hero-intro-box strong {
+      color: var(--text-white);
+      font-weight: 600;
+    }
+
+    .hero-intro-box .hl {
+      color: var(--accent-cyan);
+    }
+
+    @keyframes heroReveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      opacity: 0;
+      animation: heroReveal 1s var(--ease-expo) 1.2s forwards;
+    }
+
+    .hero-scroll-indicator span {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .scroll-arrow {
+      width: 1px;
+      height: 50px;
+      background: linear-gradient(to bottom, var(--accent-cyan), transparent);
+      animation: scrollBounce 2s ease-in-out infinite;
+    }
+
+    @keyframes scrollBounce {
+
+      0%,
+      100% {
+        transform: scaleY(0.5);
+        opacity: 0.3;
+      }
+
+      50% {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero-content {
+        padding: 0 1.5rem;
+      }
+
+      .hero-hey {
+        font-size: 5rem;
+      }
+    }
+
+    /* ═══════════════════════════════════════════
    SECTION SHARED
    ═══════════════════════════════════════════ */
-section { position: relative; }
+    section {
+      position: relative;
+    }
 
-.section-pad { padding: 7rem 3rem; }
-@media (max-width: 900px) { .section-pad { padding: 4rem 1.5rem; } }
+    .section-pad {
+      padding: 7rem 3rem;
+    }
 
-.container { max-width: 1400px; margin: 0 auto; }
+    @media (max-width: 900px) {
+      .section-pad {
+        padding: 4rem 1.5rem;
+      }
+    }
 
-.section-label {
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  font-weight: 500;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--accent-cyan);
-  margin-bottom: 0.8rem;
-}
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 7rem);
-  line-height: 0.9;
-  letter-spacing: -0.01em;
-  margin-bottom: 1.5rem;
-}
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 0.8rem;
+    }
 
-/* Reveal animation */
-.rv { opacity: 0; transform: translateY(50px); transition: all 0.8s var(--ease-expo); }
-.rv.vis { opacity: 1; transform: translateY(0); }
-.rv-d1 { transition-delay: 0.1s; }
-.rv-d2 { transition-delay: 0.2s; }
-.rv-d3 { transition-delay: 0.3s; }
-.rv-d4 { transition-delay: 0.4s; }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 7rem);
+      line-height: 0.9;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+    }
 
-/* ═══════════════════════════════════════════
+    /* Reveal animation */
+    .rv {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s var(--ease-expo);
+    }
+
+    .rv.vis {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .rv-d1 {
+      transition-delay: 0.1s;
+    }
+
+    .rv-d2 {
+      transition-delay: 0.2s;
+    }
+
+    .rv-d3 {
+      transition-delay: 0.3s;
+    }
+
+    .rv-d4 {
+      transition-delay: 0.4s;
+    }
+
+    /* ═══════════════════════════════════════════
    WORKS SECTION — scroll-driven video bg then cards
    ═══════════════════════════════════════════ */
-.works {
-  position: relative;
-}
+    .works {
+      position: relative;
+    }
 
-/* VIDEO REEL — scrubs on scroll, then releases */
-.works-reel {
-  position: relative;
-  height: 400vh;
-}
+    /* VIDEO REEL — scrubs on scroll, then releases */
+    .works-reel {
+      position: relative;
+      height: 400vh;
+    }
 
-.works-reel-sticky {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-dark);
-}
+    .works-reel-sticky {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-dark);
+    }
 
-.works-video-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
+    .works-video-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
 
-.works-video-bg video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
-}
+    .works-video-bg video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
 
-.works-video-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: rgba(10,10,15,0.25);
-  pointer-events: none;
-}
+    .works-video-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: rgba(10, 10, 15, 0.25);
+      pointer-events: none;
+    }
 
-.works-video-scanlines {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 2px,
-    rgba(0,0,0,0.04) 2px,
-    rgba(0,0,0,0.04) 4px
-  );
-}
+    .works-video-scanlines {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background: repeating-linear-gradient(to bottom,
+          transparent 0px,
+          transparent 2px,
+          rgba(0, 0, 0, 0.04) 2px,
+          rgba(0, 0, 0, 0.04) 4px);
+    }
 
-/* Centered SHOWREEL label on top of video */
-.works-reel-title {
-  position: relative;
-  z-index: 5;
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 4rem);
-  letter-spacing: 0.08em;
-  color: var(--text-white);
-  opacity: 0.85;
-  text-shadow: 0 2px 30px rgba(0,0,0,0.5);
-}
+    .works-reel-title {
+      position: relative;
+      z-index: 5;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 4rem);
+      letter-spacing: 0.08em;
+      color: var(--text-white);
+      opacity: 0.85;
+      text-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+    }
 
-.works-video-progress {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  opacity: 0.5;
-}
+    .works-video-progress {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      opacity: 0.5;
+    }
 
-.wvp-bar {
-  width: 200px;
-  height: 2px;
-  background: rgba(255,255,255,0.12);
-  border-radius: 2px;
-  overflow: hidden;
-}
-.wvp-fill {
-  height: 100%;
-  width: 0%;
-  background: var(--accent-cyan);
-  transition: width 0.08s linear;
-}
-.wvp-label {
-  font-family: var(--font-mono);
-  font-size: 0.5rem;
-  letter-spacing: 0.12em;
-  color: var(--text-muted);
-  text-transform: uppercase;
-}
+    .wvp-bar {
+      width: 200px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 2px;
+      overflow: hidden;
+    }
 
-.works-reel-hint {
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  font-family: var(--font-mono);
-  font-size: 0.5rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
+    .wvp-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--accent-cyan);
+      transition: width 0.08s linear;
+    }
 
-/* CARDS SECTION — appears normally after video */
-.works-cards {
-  background: var(--bg-dark);
-  padding: 6rem 3rem;
-}
+    .wvp-label {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
 
-.works-cards .container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
+    .works-reel-hint {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
 
-.works-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+    /* CARDS SECTION — appears normally after video */
+    .works-cards {
+      background: var(--bg-dark);
+      padding: 6rem 3rem;
+    }
 
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-}
+    .works-cards .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
 
-@media (max-width: 1000px) { .works-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .works-grid { grid-template-columns: 1fr; } }
+    .works-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-.work-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  background: var(--bg-elevated);
-  border: 1px solid rgba(255,255,255,0.05);
-  transition: transform 0.5s var(--ease-expo), border-color 0.3s;
-  display: block;
-}
-.work-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(0,232,212,0.25);
-}
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
 
-.work-card-img {
-  position: relative;
-  height: 180px;
-  overflow: hidden;
-  background: #0a0a0f;
-}
+    @media (max-width: 1000px) {
+      .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-.work-card-img canvas {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 3;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.work-card:hover .work-card-img canvas { opacity: 1; }
+    @media (max-width: 600px) {
+      .works-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-.work-card-body { padding: 1.2rem 1.4rem; }
+    .work-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: var(--bg-elevated);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: transform 0.5s var(--ease-expo), border-color 0.3s;
+      display: block;
+    }
 
-.work-card-category {
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent-cyan);
-  margin-bottom: 0.4rem;
-}
+    .work-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0, 232, 212, 0.25);
+    }
 
-.work-card-title {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.3rem;
-}
+    .work-card-img {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+      background: var(--bg-elevated);
+    }
 
-.work-card-desc {
-  font-size: 0.75rem;
-  color: var(--text-gray);
-  line-height: 1.6;
-}
+    .work-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
-.work-card-tags {
-  display: flex; flex-wrap: wrap; gap: 0.4rem;
-  margin-top: 0.8rem;
-}
-.work-card-tag {
-  font-family: var(--font-mono);
-  font-size: 0.5rem;
-  padding: 0.2rem 0.55rem;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 4px;
-  color: var(--text-muted);
-}
+    .work-card-img-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(10,10,15,0.35);
+      z-index: 1;
+      transition: background 0.4s;
+    }
 
-@media (max-width: 900px) {
-  .works-cards { padding: 4rem 1.5rem; }
-}
+    .work-card:hover .work-card-img-overlay {
+      background: rgba(10,10,15,0.55);
+    }
 
-/* ═══════════════════════════════════════════
+    .work-card-img-title {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      letter-spacing: 0.05em;
+      color: var(--text-white);
+      text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+      z-index: 2;
+    }
+
+    .work-card-img canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .work-card:hover .work-card-img canvas {
+      opacity: 1;
+    }
+
+    .work-card-body {
+      padding: 1.2rem 1.4rem;
+    }
+
+    .work-card-category {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 0.4rem;
+    }
+
+    .work-card-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.3rem;
+    }
+
+    .work-card-desc {
+      font-size: 0.75rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+    }
+
+    .work-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+    }
+
+    .work-card-tag {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      padding: 0.2rem 0.55rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .works-cards {
+        padding: 4rem 1.5rem;
+      }
+    }
+
+    /* ═══════════════════════════════════════════
    SERVICES SECTION
    ═══════════════════════════════════════════ */
-.services {
-  background: var(--bg-blue);
-  color: var(--text-white);
-  overflow: hidden;
-}
+    .services {
+      background: var(--bg-blue);
+      color: var(--text-white);
+      overflow: hidden;
+    }
 
-.services .section-label { color: var(--bg-dark); }
-.services .section-title { color: var(--text-white); }
+    .services .section-label {
+      color: var(--bg-dark);
+    }
 
-.services-intro {
-  font-size: 1rem;
-  max-width: 600px;
-  color: rgba(255,255,255,0.7);
-  margin-bottom: 4rem;
-  line-height: 1.7;
-}
+    .services .section-title {
+      color: var(--text-white);
+    }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
-}
-@media (max-width: 1000px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } }
+    .services-intro {
+      font-size: 1rem;
+      max-width: 600px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 4rem;
+      line-height: 1.7;
+    }
 
-.service-card {
-  background: var(--bg-dark);
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.4s var(--ease-expo);
-}
-.service-card:hover { transform: translateY(-8px); }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
+    }
 
-.service-card-top {
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
+    @media (max-width: 1000px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-.service-icon {
-  font-family: var(--font-display);
-  font-size: 4rem;
-  letter-spacing: 0.03em;
-  z-index: 2;
-}
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-.service-card-top::after {
-  content: attr(data-label);
-  position: absolute;
-  font-family: var(--font-display);
-  font-size: 8rem;
-  color: rgba(255,255,255,0.03);
-  white-space: nowrap;
-  z-index: 1;
-}
+    .service-card {
+      background: var(--bg-dark);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.4s var(--ease-expo);
+    }
 
-.service-badge {
-  position: absolute;
-  top: 1rem; right: 1rem;
-  width: 36px; height: 36px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 3;
-  font-size: 0.65rem;
-  font-weight: 700;
-}
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
 
-.service-card-body {
-  padding: 1.5rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
+    .service-card-top {
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-.service-card-body .label {
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 0.3rem;
-}
+    .service-icon {
+      font-family: var(--font-display);
+      font-size: 4rem;
+      letter-spacing: 0.03em;
+      z-index: 2;
+    }
 
-.service-card-body h3 {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  letter-spacing: 0.02em;
-  margin-bottom: 0.5rem;
-}
+    .service-card-top::after {
+      content: attr(data-label);
+      position: absolute;
+      font-family: var(--font-display);
+      font-size: 8rem;
+      color: rgba(255, 255, 255, 0.03);
+      white-space: nowrap;
+      z-index: 1;
+    }
 
-.service-card-body p {
-  font-size: 0.75rem;
-  color: var(--text-gray);
-  line-height: 1.6;
-}
+    .service-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      font-size: 0.65rem;
+      font-weight: 700;
+    }
 
-/* Color coded badges */
-.badge-red { background: var(--accent-orange); color: var(--bg-dark); }
-.badge-cyan { background: var(--accent-cyan); color: var(--bg-dark); }
-.badge-yellow { background: var(--accent-yellow); color: var(--bg-dark); }
-.badge-pink { background: var(--accent-pink); color: white; }
+    .service-card-body {
+      padding: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
 
-/* ═══════════════════════════════════════════
+    .service-card-body .label {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .service-card-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card-body p {
+      font-size: 0.75rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+    }
+
+    /* Color coded badges */
+    .badge-red {
+      background: var(--accent-orange);
+      color: var(--bg-dark);
+    }
+
+    .badge-cyan {
+      background: var(--accent-cyan);
+      color: var(--bg-dark);
+    }
+
+    .badge-yellow {
+      background: var(--accent-yellow);
+      color: var(--bg-dark);
+    }
+
+    .badge-pink {
+      background: var(--accent-pink);
+      color: white;
+    }
+
+    /* ═══════════════════════════════════════════
    ABOUT SECTION
    ═══════════════════════════════════════════ */
-.about {
-  background: var(--bg-elevated);
-}
+    .about {
+      background: var(--bg-elevated);
+    }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 0.8fr;
-  gap: 4rem;
-  align-items: start;
-}
-@media (max-width: 1000px) { .about-grid { grid-template-columns: 1fr; } }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: start;
+    }
 
-.about-title-col .section-title {
-  font-size: clamp(3rem, 7vw, 6rem);
-}
+    @media (max-width: 1000px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-.about-bio p {
-  font-size: 0.9rem;
-  line-height: 1.8;
-  color: var(--text-gray);
-  margin-bottom: 1.2rem;
-}
-.about-bio strong { color: var(--text-white); font-weight: 600; }
-.about-bio .hl { color: var(--accent-cyan); }
+    .about-title-col .section-title {
+      font-size: clamp(3rem, 7vw, 6rem);
+    }
 
-.about-roster h3 {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.03em;
-}
+    .about-bio p {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: var(--text-gray);
+      margin-bottom: 1.2rem;
+    }
 
-.roster-list {
-  list-style: none;
-}
-.roster-list li {
-  font-size: 0.8rem;
-  color: var(--text-gray);
-  padding: 0.4rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  transition: color 0.2s;
-}
-.roster-list li:hover { color: var(--accent-cyan); }
+    .about-bio strong {
+      color: var(--text-white);
+      font-weight: 600;
+    }
 
-/* Awards marquee */
-.awards-ticker {
-  margin-top: 4rem;
-  overflow: hidden;
-  border-top: 1px solid rgba(255,255,255,0.06);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  padding: 1.2rem 0;
-}
-.awards-ticker-inner {
-  display: inline-flex;
-  animation: tickerScroll 25s linear infinite;
-  white-space: nowrap;
-}
-.awards-ticker-item {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  padding: 0 2rem;
-  color: var(--text-muted);
-  display: inline-flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.awards-ticker-item .dot {
-  width: 6px; height: 6px;
-  background: var(--accent-cyan);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-@keyframes tickerScroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
+    .about-bio .hl {
+      color: var(--accent-cyan);
+    }
 
-/* ═══════════════════════════════════════════
+    .about-roster h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .roster-list {
+      list-style: none;
+    }
+
+    .roster-list li {
+      font-size: 0.8rem;
+      color: var(--text-gray);
+      padding: 0.4rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      transition: color 0.2s;
+    }
+
+    .roster-list li:hover {
+      color: var(--accent-cyan);
+    }
+
+    /* Awards marquee */
+    .awards-ticker {
+      margin-top: 4rem;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 1.2rem 0;
+    }
+
+    .awards-ticker-inner {
+      display: inline-flex;
+      animation: tickerScroll 25s linear infinite;
+      white-space: nowrap;
+    }
+
+    .awards-ticker-item {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      padding: 0 2rem;
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .awards-ticker-item .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent-cyan);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    @keyframes tickerScroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ═══════════════════════════════════════════
    BLOG SECTION (SEO)
    ═══════════════════════════════════════════ */
-.blog { background: var(--bg-dark); }
+    .blog {
+      background: var(--bg-dark);
+    }
 
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
-@media (max-width: 900px) { .blog-grid { grid-template-columns: 1fr; } }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
 
-.blog-card {
-  background: var(--bg-elevated);
-  border: 1px solid rgba(255,255,255,0.04);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: transform 0.4s var(--ease-expo), border-color 0.3s;
-  display: block;
-}
-.blog-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(0,232,212,0.15);
-}
+    @media (max-width: 900px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-.blog-card-img {
-  height: 180px;
-  overflow: hidden;
-  position: relative;
-}
-.blog-card-img .placeholder {
-  width: 100%; height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 2rem;
-  color: var(--text-muted);
-}
-.blog-card-img .placeholder.bg-1 { background: linear-gradient(135deg, #0d1b3e, #1a3aff30); }
-.blog-card-img .placeholder.bg-2 { background: linear-gradient(135deg, #1a0a2e, #ff3d6e20); }
-.blog-card-img .placeholder.bg-3 { background: linear-gradient(135deg, #0a2020, #00e8d420); }
+    .blog-card {
+      background: var(--bg-elevated);
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.4s var(--ease-expo), border-color 0.3s;
+      display: block;
+    }
 
-.blog-card-body { padding: 1.5rem; }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 232, 212, 0.15);
+    }
 
-.blog-card-date {
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  color: var(--text-muted);
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5rem;
-}
+    .blog-card-img {
+      height: 180px;
+      overflow: hidden;
+      position: relative;
+      background: var(--bg-elevated);
+    }
 
-.blog-card-title {
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 1.05rem;
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
-  transition: color 0.2s;
-}
-.blog-card:hover .blog-card-title { color: var(--accent-cyan); }
+    .blog-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s var(--ease-expo);
+    }
 
-.blog-card-excerpt {
-  font-size: 0.75rem;
-  color: var(--text-gray);
-  line-height: 1.6;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
+    .blog-card:hover .blog-card-img img {
+      transform: scale(1.05);
+    }
 
-.blog-card-read {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  margin-top: 1rem;
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  color: var(--accent-cyan);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+    .blog-card-img.no-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--bg-elevated), #1a1a30);
+    }
 
-/* ═══════════════════════════════════════════
+    .blog-card-img.no-img::after {
+      content: 'BLOG';
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--text-muted);
+      opacity: 0.4;
+    }
+
+    .blog-card-body {
+      padding: 1.5rem;
+    }
+
+    .blog-card-date {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-card-title {
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 1.05rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .blog-card:hover .blog-card-title {
+      color: var(--accent-cyan);
+    }
+
+    .blog-card-excerpt {
+      font-size: 0.75rem;
+      color: var(--text-gray);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .blog-card-read {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--accent-cyan);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ═══════════════════════════════════════════
+   KO-FI SUPPORT SECTION
+   ═══════════════════════════════════════════ */
+    .support {
+      background: var(--bg-elevated);
+      padding: 5rem 3rem;
+    }
+
+    .support-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .support-inner { grid-template-columns: 1fr; }
+      .support { padding: 4rem 1.5rem; }
+    }
+
+    .support-text h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    .support-text p {
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .support-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--accent-cyan, #00e8d4);
+      color: var(--bg-dark);
+      padding: 0.85rem 1.8rem;
+      border-radius: 6px;
+      transition: all 0.3s var(--ease-expo);
+    }
+
+    .support-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0,232,212,0.25);
+    }
+
+    .support-panel {
+      background: var(--bg-dark);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 1.8rem;
+    }
+
+    .support-panel-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      font-size: 0.75rem;
+    }
+
+    .support-panel-row:last-child { border-bottom: none; }
+
+    .support-panel-row .label {
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .support-panel-row .value {
+      color: var(--text-white);
+      font-weight: 500;
+    }
+
+    /* ═══════════════════════════════════════════
    CONTACT / CTA SECTION
    ═══════════════════════════════════════════ */
-.contact {
-  background: var(--bg-dark);
-  text-align: center;
-  padding: 8rem 3rem;
-}
+    .contact {
+      background: var(--bg-dark);
+      text-align: center;
+      padding: 8rem 3rem;
+    }
 
-.contact-title {
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 9vw, 8rem);
-  line-height: 0.9;
-  margin-bottom: 1.5rem;
-}
-.contact-title .serif {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
-  color: var(--accent-cyan);
-}
+    .contact-title {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 9vw, 8rem);
+      line-height: 0.9;
+      margin-bottom: 1.5rem;
+    }
 
-.contact-sub {
-  font-size: 0.9rem;
-  color: var(--text-gray);
-  max-width: 500px;
-  margin: 0 auto 3rem;
-}
+    .contact-title .serif {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--accent-cyan);
+    }
 
-.contact-links-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 3rem;
-}
+    .contact-sub {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      max-width: 500px;
+      margin: 0 auto 3rem;
+    }
 
-.c-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-gray);
-  border: 1px solid rgba(255,255,255,0.08);
-  padding: 0.7rem 1.3rem;
-  border-radius: 100px;
-  transition: all 0.3s var(--ease-expo);
-}
-.c-link:hover {
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
-  background: rgba(0,232,212,0.06);
-  transform: translateY(-2px);
-}
+    .contact-links-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 3rem;
+    }
 
-/* ═══════════════════════════════════════════
+    .c-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-gray);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0.7rem 1.3rem;
+      border-radius: 100px;
+      transition: all 0.3s var(--ease-expo);
+    }
+
+    .c-link:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(0, 232, 212, 0.06);
+      transform: translateY(-2px);
+    }
+
+    /* ═══════════════════════════════════════════
    FOOTER
    ═══════════════════════════════════════════ */
-footer {
-  padding: 2rem 3rem;
-  border-top: 1px solid rgba(255,255,255,0.04);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1400px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-footer p {
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.footer-top-btn {
-  font-family: var(--font-mono);
-  font-size: 0.55rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  background: none;
-  border: 1px solid rgba(255,255,255,0.06);
-  padding: 0.5rem 1rem;
-  border-radius: 100px;
-  cursor: none;
-  transition: all 0.3s;
-}
-.footer-top-btn:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+    footer {
+      padding: 2rem 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
 
-/* ═══════════════════════════════════════════
+    footer p {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .footer-top-btn {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: none;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 0.5rem 1rem;
+      border-radius: 100px;
+      cursor: none;
+      transition: all 0.3s;
+    }
+
+    .footer-top-btn:hover {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+    }
+
+    /* ═══════════════════════════════════════════
    SCROLL PROGRESS BAR
    ═══════════════════════════════════════════ */
-.scroll-bar {
-  position: fixed; top: 0; left: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-orange));
-  z-index: 99991;
-  width: 0%;
-  pointer-events: none;
-}
-</style>
+    .scroll-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-orange));
+      z-index: 99991;
+      width: 0%;
+      pointer-events: none;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="grain"></div>
-<div class="scroll-bar" id="scrollBar"></div>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-follow" id="cursorFollow"></div>
+  <div class="grain"></div>
+  <div class="scroll-bar" id="scrollBar"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follow" id="cursorFollow"></div>
 
-<!-- ═══════ NAVIGATION ═══════ -->
-<nav class="nav">
-  <a href="#" class="nav-logo">BK<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#works" class="active" data-h>Work</a></li>
-    <li><a href="#services" data-h>Services</a></li>
-    <li><a href="#about" data-h>About</a></li>
-    <li><a href="#blog" data-h>Blog</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta" data-h>Let's Talk</a>
-  <button class="nav-burger" id="burger" aria-label="Menu" data-h>
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">BK<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#works" class="active" data-h>Work</a></li>
+      <li><a href="#services" data-h>Services</a></li>
+      <li><a href="#about" data-h>About</a></li>
+      <li><a href="#blog" data-h>Blog</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta" data-h>Let's Talk</a>
+    <button class="nav-burger" id="burger" aria-label="Menu" data-h>
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#works" class="mm-link">WORK</a>
-  <a href="#services" class="mm-link">SERVICES</a>
-  <a href="#about" class="mm-link">ABOUT</a>
-  <a href="#blog" class="mm-link">BLOG</a>
-  <a href="#contact" class="mm-link">CONTACT</a>
-</div>
-
-<!-- ═══════ HERO ═══════ -->
-<section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-particles" id="particles"></div>
-  
-  <div class="hero-content">
-    <div class="hero-left">
-      <h1 class="hero-hey">HEY!</h1>
-      <div class="hero-intro-box">
-        <p>
-          You've arrived at the portfolio of <strong>Berkay Kalender</strong> — a 
-          <span class="hl">game designer</span>, technical artist &amp; illustrator 
-          combining <strong>psychology</strong> with interactive media. 
-          Currently creating from Vilnius.
-        </p>
-      </div>
-    </div>
-  </div>
-  
-  <a href="#works" class="hero-scroll-indicator" data-h>
-    <span>See my work</span>
-    <div class="scroll-arrow"></div>
-  </a>
-</section>
-
-<!-- ═══════ WORKS ═══════ -->
-<section class="works" id="works">
-
-  <!-- PART 1: Scroll-driven video reel -->
-  <div class="works-reel" id="worksReel">
-    <div class="works-reel-sticky">
-      <div class="works-video-bg">
-        <video id="bgVideo" muted playsinline preload="auto">
-          <source src="Portfolio_Video.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="works-video-overlay"></div>
-      <div class="works-video-scanlines"></div>
-      <h2 class="works-reel-title">SHOWREEL</h2>
-      <div class="works-reel-hint">↕ SCROLL TO PLAY</div>
-      <div class="works-video-progress">
-        <div class="wvp-bar"><div class="wvp-fill" id="vFill"></div></div>
-        <span class="wvp-label" id="vLabel">SHOWREEL · 00:00</span>
-      </div>
-    </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#works" class="mm-link">WORK</a>
+    <a href="#services" class="mm-link">SERVICES</a>
+    <a href="#about" class="mm-link">ABOUT</a>
+    <a href="#blog" class="mm-link">BLOG</a>
+    <a href="#contact" class="mm-link">CONTACT</a>
   </div>
 
-  <!-- PART 2: Project cards (normal flow, after video) -->
-  <div class="works-cards">
+  <!-- ═══════ HERO ═══════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles" id="particles"></div>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-hey">HEY!</h1>
+        <div class="hero-intro-box">
+          <p>
+            You've arrived at the portfolio of <strong>Berkay Kalender</strong> — a
+            <span class="hl">game designer</span>, technical artist &amp; illustrator
+            combining <strong>psychology</strong> with interactive media.
+            Currently creating from Vilnius.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#works" class="hero-scroll-indicator" data-h>
+      <span>See my work</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ═══════ WORKS ═══════ -->
+  <section class="works" id="works">
+
+    <!-- PART 1: Scroll-driven video reel -->
+    <div class="works-reel" id="worksReel">
+      <div class="works-reel-sticky">
+        <div class="works-video-bg">
+          <video id="bgVideo" muted playsinline preload="auto">
+            <source src="Portfolio_Video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="works-video-overlay"></div>
+        <div class="works-video-scanlines"></div>
+        <div class="works-reel-hint">↕ SCROLL TO PLAY</div>
+        <div class="works-video-progress">
+          <div class="wvp-bar">
+            <div class="wvp-fill" id="vFill"></div>
+          </div>
+          <span class="wvp-label" id="vLabel">SHOWREEL · 00:00</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PART 2: Project cards (normal flow, after video) -->
+    <div class="works-cards">
+      <div class="container">
+        <div class="works-header">
+          <div>
+            <div class="section-label rv">Selected Projects</div>
+            <h2 class="section-title rv rv-d1">WORK</h2>
+          </div>
+          <p class="rv rv-d2" style="max-width:400px; font-size:0.85rem; color:var(--text-gray); text-align:right;">
+            Games, cinematics, apps, and illustrations — each built where psychology meets the engine.
+          </p>
+        </div>
+
+        <div class="works-grid">
+          <a href="https://www.behance.net/gallery/243769275/PORTFOLIO-2026-Game-Designer-Technical-Artist" target="_blank" class="work-card rv" data-h>
+            <div class="work-card-img" data-distort>
+              <img src="img/chlorine.jpg" alt="CHLORINE" onerror="this.style.display='none'">
+              <div class="work-card-img-overlay">
+                <span class="work-card-img-title">CHLORINE</span>
+              </div>
+              <canvas></canvas>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-category">Game · UE5</div>
+              <h3 class="work-card-title">CHLORINE</h3>
+              <p class="work-card-desc">2-player co-op liminal space horror. Rising water mechanic, 3-act narrative structure.</p>
+            </div>
+          </a>
+
+          <a href="https://fancymultimedia.itch.io/worn" target="_blank" class="work-card rv rv-d1" data-h>
+            <div class="work-card-img" data-distort>
+              <img src="img/worn.jpg" alt="WORN" onerror="this.style.display='none'">
+              <div class="work-card-img-overlay">
+                <span class="work-card-img-title">WORN</span>
+              </div>
+              <canvas></canvas>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-category">Game Jam · 48hrs</div>
+              <h3 class="work-card-title">WORN</h3>
+              <p class="work-card-desc">Global Game Jam Lithuania 2026. Psychology-driven horror — solo dev, 48 hours.</p>
+            </div>
+          </a>
+
+          <a href="https://www.behance.net/gallery/230060923/The-Hatman-Cinematic-Cutscene-in-UE5" target="_blank" class="work-card rv rv-d2" data-h>
+            <div class="work-card-img" data-distort>
+              <img src="img/hatman.jpg" alt="THE HATMAN" onerror="this.style.display='none'">
+              <div class="work-card-img-overlay">
+                <span class="work-card-img-title">THE HATMAN</span>
+              </div>
+              <canvas></canvas>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-category">Cinematic · UE5</div>
+              <h3 class="work-card-title">THE HATMAN</h3>
+              <p class="work-card-desc">UE5 cinematic cutscene. MetaHuman performance, horror narrative.</p>
+            </div>
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.inkvision.app&pcampaignid=web_share" target="_blank" class="work-card rv" data-h>
+            <div class="work-card-img" data-distort>
+              <img src="img/inkvision.jpg" alt="INKVISION" onerror="this.style.display='none'">
+              <div class="work-card-img-overlay">
+                <span class="work-card-img-title">INKVISION</span>
+              </div>
+              <canvas></canvas>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-category">App · Flutter</div>
+              <h3 class="work-card-title">INKVISION</h3>
+              <p class="work-card-desc">AI Tattoo Design with AR preview. Published on Google Play.</p>
+            </div>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=QoamgaRuMxY&pp=0gcJCdkKAYcqIYzv" target="_blank" class="work-card rv rv-d1" data-h>
+            <div class="work-card-img" data-distort>
+              <img src="img/catio.jpg" alt="THE CATIO" onerror="this.style.display='none'">
+              <div class="work-card-img-overlay">
+                <span class="work-card-img-title">THE CATIO</span>
+              </div>
+              <canvas></canvas>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-category">Game · Unity</div>
+              <h3 class="work-card-title">THE CATIO</h3>
+              <p class="work-card-desc">2D platformer with hand-drawn sprite animation. Shipped via Google Game Academy.</p>
+            </div>
+          </a>
+
+          <a href="https://www.behance.net/gallery/204469629/Webcomic-Portfolio-Fancy-Stars-Series" target="_blank" class="work-card rv rv-d2" data-h>
+            <div class="work-card-img" data-distort>
+              <img src="img/fancystars.jpg" alt="FANCY STARS" onerror="this.style.display='none'">
+              <div class="work-card-img-overlay">
+                <span class="work-card-img-title">FANCY STARS</span>
+              </div>
+              <canvas></canvas>
+            </div>
+            <div class="work-card-body">
+              <div class="work-card-category">Webcomic · IP</div>
+              <h3 class="work-card-title">FANCY STARS</h3>
+              <p class="work-card-desc">Original webcomic & animation project. Character design, serialized storytelling.</p>
+            </div>
+          </a>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <section class="services section-pad" id="services">
     <div class="container">
-      <div class="works-header">
-        <div>
-          <div class="section-label rv">Selected Projects</div>
-          <h2 class="section-title rv rv-d1">WORK</h2>
+      <h2 class="section-title rv rv-d1">SERVICES</h2>
+      <p class="services-intro rv rv-d2">
+        I'm a full-stack creative — from concept to shipped product.
+        Psychology-informed design, technical execution, and AI-accelerated pipelines.
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card rv">
+          <div class="service-card-top" data-label="GAME">
+            <div class="service-icon" style="color:var(--accent-orange);">GAME</div>
+          </div>
+          <div class="service-card-body">
+            <div class="label">Service</div>
+            <h3>GAME DESIGN</h3>
+            <p>Player-centered mechanics, level design, UE5/Unity prototyping, narrative design. Horror & psychological
+              genre specialty.</p>
+          </div>
         </div>
-        <p class="rv rv-d2" style="max-width:400px; font-size:0.85rem; color:var(--text-gray);">
-          Games, cinematics, apps, and illustrations — each built where psychology meets the engine.
-        </p>
-      </div>
-      
-      <div class="works-grid">
-        <a href="https://www.behance.net/fancymultimedia" target="_blank" class="work-card rv" data-h>
-          <div class="work-card-img" data-distort>
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0a2828,#003333);display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--font-display);font-size:3rem;color:var(--accent-cyan);opacity:0.6;">CHLORINE</span>
-            </div>
-            <canvas></canvas>
-          </div>
-          <div class="work-card-body">
-            <div class="work-card-category">Game · UE5</div>
-            <h3 class="work-card-title">CHLORINE</h3>
-            <p class="work-card-desc">2-player co-op liminal space horror. Rising water mechanic, 3-act narrative structure.</p>
-            <div class="work-card-tags">
-              <span class="work-card-tag">Unreal Engine 5</span>
-              <span class="work-card-tag">Horror</span>
-              <span class="work-card-tag">Co-op</span>
-            </div>
-          </div>
-        </a>
 
-        <a href="https://www.behance.net/fancymultimedia" target="_blank" class="work-card rv rv-d1" data-h>
-          <div class="work-card-img" data-distort>
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a0a20,#2d1040);display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--font-display);font-size:3rem;color:var(--accent-pink);opacity:0.6;">WORN</span>
-            </div>
-            <canvas></canvas>
+        <div class="service-card rv rv-d1">
+          <div class="service-card-top" data-label="ART">
+            <div class="service-icon" style="color:var(--accent-cyan);">ART</div>
           </div>
-          <div class="work-card-body">
-            <div class="work-card-category">Game Jam · 48hrs</div>
-            <h3 class="work-card-title">WORN</h3>
-            <p class="work-card-desc">Global Game Jam Lithuania 2026. Psychology-driven horror — solo dev, 48 hours.</p>
-            <div class="work-card-tags">
-              <span class="work-card-tag">Game Jam</span>
-              <span class="work-card-tag">Psych Horror</span>
-            </div>
+          <div class="service-card-body">
+            <div class="label">Service</div>
+            <h3>ILLUSTRATION</h3>
+            <p>Character design, sprite animation, storyboards, webcomics. Professional illustrator with original IPs.
+            </p>
           </div>
-        </a>
+        </div>
 
-        <a href="https://www.behance.net/fancymultimedia" target="_blank" class="work-card rv rv-d2" data-h>
-          <div class="work-card-img" data-distort>
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0a0a1a,#1a1a30);display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--font-display);font-size:2.5rem;color:var(--accent-orange);opacity:0.6;">THE HATMAN</span>
-            </div>
-            <canvas></canvas>
+        <div class="service-card rv rv-d2">
+          <div class="service-card-top" data-label="FILM">
+            <div class="service-icon" style="color:var(--accent-yellow);">FILM</div>
           </div>
-          <div class="work-card-body">
-            <div class="work-card-category">Cinematic · UE5</div>
-            <h3 class="work-card-title">THE HATMAN</h3>
-            <p class="work-card-desc">UE5 cinematic cutscene. MetaHuman performance, horror narrative.</p>
-            <div class="work-card-tags">
-              <span class="work-card-tag">Unreal Engine 5</span>
-              <span class="work-card-tag">Cinematic</span>
-            </div>
+          <div class="service-card-body">
+            <div class="label">Service</div>
+            <h3>CINEMATICS</h3>
+            <p>UE5 Sequencer, MetaHuman, cinematic cutscenes, virtual production. Engine-driven storytelling.</p>
           </div>
-        </a>
+        </div>
 
-        <a href="https://play.google.com/store" target="_blank" class="work-card rv" data-h>
-          <div class="work-card-img" data-distort>
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#0d0d1f,#1a2a5e);display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--font-display);font-size:2.5rem;color:var(--accent-yellow);opacity:0.6;">INKVISION</span>
-            </div>
-            <canvas></canvas>
+        <div class="service-card rv rv-d3">
+          <div class="service-card-top" data-label="AI">
+            <div class="service-icon" style="color:var(--accent-pink);">AI</div>
           </div>
-          <div class="work-card-body">
-            <div class="work-card-category">App · Flutter</div>
-            <h3 class="work-card-title">INKVISION</h3>
-            <p class="work-card-desc">AI Tattoo Design with AR preview. Published on Google Play.</p>
-            <div class="work-card-tags">
-              <span class="work-card-tag">Flutter</span>
-              <span class="work-card-tag">AI</span>
-              <span class="work-card-tag">AR</span>
-            </div>
+          <div class="service-card-body">
+            <div class="label">Service</div>
+            <h3>AI PIPELINES</h3>
+            <p>ComfyUI workflows, Stable Diffusion, LoRA training, automated content generation. 10x production speed.
+            </p>
           </div>
-        </a>
-
-        <a href="https://www.behance.net/fancymultimedia" target="_blank" class="work-card rv rv-d1" data-h>
-          <div class="work-card-img" data-distort>
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a2010,#2a3a20);display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--font-display);font-size:3rem;color:#8eff8e;opacity:0.6;">THE CATIO</span>
-            </div>
-            <canvas></canvas>
-          </div>
-          <div class="work-card-body">
-            <div class="work-card-category">Game · Unity</div>
-            <h3 class="work-card-title">THE CATIO</h3>
-            <p class="work-card-desc">2D platformer with hand-drawn sprite animation. Shipped via Google Game Academy.</p>
-            <div class="work-card-tags">
-              <span class="work-card-tag">Unity</span>
-              <span class="work-card-tag">2D</span>
-              <span class="work-card-tag">Illustration</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://www.behance.net/fancymultimedia" target="_blank" class="work-card rv rv-d2" data-h>
-          <div class="work-card-img" data-distort>
-            <div style="width:100%;height:100%;background:linear-gradient(135deg,#1a1030,#2a1a50);display:flex;align-items:center;justify-content:center;">
-              <span style="font-family:var(--font-display);font-size:2.5rem;color:#c49bff;opacity:0.6;">FANCY STARS</span>
-            </div>
-            <canvas></canvas>
-          </div>
-          <div class="work-card-body">
-            <div class="work-card-category">Webcomic · IP</div>
-            <h3 class="work-card-title">FANCY STARS</h3>
-            <p class="work-card-desc">Original webcomic IP. Character design, serialized storytelling.</p>
-            <div class="work-card-tags">
-              <span class="work-card-tag">Webcomic</span>
-              <span class="work-card-tag">IP</span>
-              <span class="work-card-tag">Illustration</span>
-            </div>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════ SERVICES ═══════ -->
-<section class="services section-pad" id="services">
-  <div class="container">
-    <div class="section-label rv">Services</div>
-    <h2 class="section-title rv rv-d1">SERVICES</h2>
-    <p class="services-intro rv rv-d2">
-      I'm a full-stack creative — from concept to shipped product. 
-      Psychology-informed design, technical execution, and AI-accelerated pipelines.
+  <!-- ═══════ ABOUT ═══════ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-title-col">
+          <h2 class="section-title rv rv-d1">ABOUT</h2>
+        </div>
+
+        <div class="about-bio rv rv-d2">
+          <p>
+            <strong>Hey there, I'm Berkay!</strong><br>
+            — <span class="hl">a game designer and technical artist with a background in psychology</span>
+          </p>
+          <p>
+            I design player-centered experiences where psychology meets interactive systems.
+            With a <strong>BA in Psychology (Honors)</strong> and hands-on game development experience,
+            I approach every project from both the player's mind and the engine's architecture.
+          </p>
+          <p>
+            Recent work includes <strong>WORN</strong>, a psychology-driven horror game built solo in 48 hours
+            at Global Game Jam 2026; <strong>The Hatman</strong>, a cinematic cutscene created from scratch in
+            Unreal Engine 5; and <strong>The Catio</strong>, a 2D mobile platformer shipped through Google Game Academy.
+          </p>
+          <p>
+            I work across <strong>Unreal Engine 5</strong>, <strong>Unity/C#</strong>, <strong>Clip Studio
+              Paint</strong>,
+            and the <strong>Adobe suite</strong> — from game mechanics and level design to character art and cinematic
+            storytelling.
+          </p>
+          <p>
+            Currently based in <strong>Vilnius</strong>, studying Multimedia Design at <strong>VILNIUS TECH</strong>.
+          </p>
+          <p style="color:var(--accent-cyan);">
+            <strong>Open to opportunities in game design, technical art, and interactive media — let's connect.</strong>
+          </p>
+        </div>
+
+        <div class="about-roster rv rv-d3">
+          <h3>TOOLKIT</h3>
+          <ul class="roster-list">
+            <li>Unreal Engine 5</li>
+            <li>Unity / C#</li>
+            <li>Clip Studio Paint</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe Animate</li>
+            <li>Blender</li>
+            <li>ComfyUI / SD</li>
+            <li>Flutter / Dart</li>
+            <li>Figma</li>
+            <li>n8n Automation</li>
+            <li>AutoCAD</li>
+          </ul>
+
+          <h3 style="margin-top:2rem;">CREDENTIALS</h3>
+          <ul class="roster-list">
+            <li>Google Game Academy</li>
+            <li>Harvard CS50</li>
+            <li>GGJ Lithuania 2026</li>
+            <li>Bilgi University · Psychology (Honors)</li>
+            <li>VilniusTech · Multimedia Design</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Awards/Skills Ticker -->
+      <div class="awards-ticker rv">
+        <div class="awards-ticker-inner">
+          <span class="awards-ticker-item">GAME DESIGN <span class="dot"></span></span>
+          <span class="awards-ticker-item">TECHNICAL ART <span class="dot"></span></span>
+          <span class="awards-ticker-item">ILLUSTRATION <span class="dot"></span></span>
+          <span class="awards-ticker-item">CINEMATICS <span class="dot"></span></span>
+          <span class="awards-ticker-item">UNREAL ENGINE <span class="dot"></span></span>
+          <span class="awards-ticker-item">PSYCHOLOGY <span class="dot"></span></span>
+          <span class="awards-ticker-item">BLENDER <span class="dot"></span></span>
+          <span class="awards-ticker-item">UNITY <span class="dot"></span></span>
+          <span class="awards-ticker-item">GAME DESIGN <span class="dot"></span></span>
+          <span class="awards-ticker-item">TECHNICAL ART <span class="dot"></span></span>
+          <span class="awards-ticker-item">ILLUSTRATION <span class="dot"></span></span>
+          <span class="awards-ticker-item">CINEMATICS <span class="dot"></span></span>
+          <span class="awards-ticker-item">PSYCHOLOGY <span class="dot"></span></span>
+          <span class="awards-ticker-item">UNREAL ENGINE <span class="dot"></span></span>
+          <span class="awards-ticker-item">BLENDER <span class="dot"></span></span>
+          <span class="awards-ticker-item">UNITY <span class="dot"></span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ BLOG (SEO) ═══════ -->
+  <section class="blog section-pad" id="blog">
+    <div class="container">
+      <div class="section-label rv">Blog</div>
+      <h2 class="section-title rv rv-d1">BLOG</h2>
+
+      <div class="blog-grid">
+        <article>
+          <a href="blog/elevate-storytelling.html" class="blog-card rv" data-h>
+            <div class="blog-card-img">
+              <img src="img/blog/storytelling.jpg" alt="Elevate Storytelling" onerror="this.parentElement.classList.add('no-img')">
+            </div>
+            <div class="blog-card-body">
+              <time class="blog-card-date">Feb 23, 2026</time>
+              <h3 class="blog-card-title">Elevate Storytelling with Cutting-Edge Multimedia Techniques</h3>
+              <p class="blog-card-excerpt">Stop scrolling. Seriously. You're about to dive into something that could transform how you tell stories.</p>
+              <span class="blog-card-read">Read More →</span>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="blog/48-hours-game-jam.html" class="blog-card rv rv-d1" data-h>
+            <div class="blog-card-img">
+              <img src="img/blog/gamejam.jpg" alt="48 Hours Game Jam" onerror="this.parentElement.classList.add('no-img')">
+            </div>
+            <div class="blog-card-body">
+              <time class="blog-card-date">Feb 6, 2026</time>
+              <h3 class="blog-card-title">48 Hours to Build Something That Scares Me</h3>
+              <p class="blog-card-excerpt">A Solo Developer's Journey Through Global Game Jam 2026. The countdown started at 5 PM on Friday.</p>
+              <span class="blog-card-read">Read More →</span>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="blog/first-cinematic-cutscene.html" class="blog-card rv rv-d2" data-h>
+            <div class="blog-card-img">
+              <img src="img/blog/hatman-cutscene.jpg" alt="Cinematic Cutscene" onerror="this.parentElement.classList.add('no-img')">
+            </div>
+            <div class="blog-card-body">
+              <time class="blog-card-date">Jul 14, 2025</time>
+              <h3 class="blog-card-title">How I Created My First Cinematic Cutscene in Unreal Engine</h3>
+              <p class="blog-card-excerpt">When I got the assignment to create a cinematic cutscene in Unreal Engine, I had zero real experience with it.</p>
+              <span class="blog-card-read">Read More →</span>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="blog/mario-ultrastar-10-years.html" class="blog-card rv" data-h>
+            <div class="blog-card-img">
+              <img src="img/blog/mario-ultrastar.jpg" alt="Mario Ultrastar" onerror="this.parentElement.classList.add('no-img')">
+            </div>
+            <div class="blog-card-body">
+              <time class="blog-card-date">Sep 3, 2024</time>
+              <h3 class="blog-card-title">Celebrating 10 Years of Mario Ultrastar: A Remastered Sprite Animation Series</h3>
+              <p class="blog-card-excerpt">A decade of pixel art, animation, and creative evolution — remastered and revisited for a new generation.</p>
+              <span class="blog-card-read">Read More →</span>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="blog/designing-relatable-characters.html" class="blog-card rv rv-d1" data-h>
+            <div class="blog-card-img">
+              <img src="img/blog/characters.jpg" alt="Character Design" onerror="this.parentElement.classList.add('no-img')">
+            </div>
+            <div class="blog-card-body">
+              <time class="blog-card-date">Aug 22, 2024</time>
+              <h3 class="blog-card-title">About Designing Relatable and Unique Characters</h3>
+              <p class="blog-card-excerpt">As a writer and illustrator working on a webcomic, I know that character design goes far beyond just how a character looks.</p>
+              <span class="blog-card-read">Read More →</span>
+            </div>
+          </a>
+        </article>
+
+        <article>
+          <a href="blog/video-art-online.html" class="blog-card rv rv-d2" data-h>
+            <div class="blog-card-img">
+              <img src="img/blog/video-art.jpg" alt="Video Art Online" onerror="this.parentElement.classList.add('no-img')">
+            </div>
+            <div class="blog-card-body">
+              <time class="blog-card-date">Feb 19, 2026</time>
+              <h3 class="blog-card-title">Creating Impactful Video Art Online</h3>
+              <p class="blog-card-excerpt">In the digital age, video art has become a powerful medium for creative expression and compelling visual stories.</p>
+              <span class="blog-card-read">Read More →</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ SUPPORT / KO-FI ═══════ -->
+  <section class="support" id="support">
+    <div class="support-inner">
+      <div class="support-text rv">
+        <div class="section-label">Support</div>
+        <h2>LEVEL UP THE DEV</h2>
+        <p>
+          I'm building games, visuals, and interactive experiments on a student budget. 
+          If my work resonates with you, Ko-fi helps me fund better tools, stronger hardware, 
+          more project time, and the next level of everything I make.
+        </p>
+        <a href="https://ko-fi.com/levelupthedev" target="_blank" class="support-cta" data-h>
+          Support on Ko-fi →
+        </a>
+      </div>
+      <div class="support-panel rv rv-d2">
+        <div class="support-panel-row">
+          <span class="label">Status</span>
+          <span class="value">Student / Indie Dev</span>
+        </div>
+        <div class="support-panel-row">
+          <span class="label">Current Quest</span>
+          <span class="value">Upgrading creative setup</span>
+        </div>
+        <div class="support-panel-row">
+          <span class="label">Support Bonus</span>
+          <span class="value">Faster renders, more projects</span>
+        </div>
+        <div class="support-panel-row">
+          <span class="label">Reward</span>
+          <span class="value">You help the next project exist</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <section class="contact" id="contact">
+    <div class="section-label rv" style="justify-content:center; display:flex;">Get In Touch</div>
+    <h2 class="contact-title rv rv-d1">LET'S CREATE<br>SOMETHING <span class="serif">together.</span></h2>
+    <p class="contact-sub rv rv-d2">
+      Open for game design, technical art, illustration commissions,
+      AI pipeline consulting, and creative collaborations.
     </p>
-
-    <div class="services-grid">
-      <div class="service-card rv">
-        <div class="service-card-top" data-label="GAME">
-          <div class="service-badge badge-red">🎮</div>
-          <div class="service-icon" style="color:var(--accent-orange);">GAME</div>
-        </div>
-        <div class="service-card-body">
-          <div class="label">Service</div>
-          <h3>GAME DESIGN</h3>
-          <p>Player-centered mechanics, level design, UE5/Unity prototyping, narrative design. Horror & psychological genre specialty.</p>
-        </div>
-      </div>
-
-      <div class="service-card rv rv-d1">
-        <div class="service-card-top" data-label="ART">
-          <div class="service-badge badge-cyan">🎨</div>
-          <div class="service-icon" style="color:var(--accent-cyan);">ART</div>
-        </div>
-        <div class="service-card-body">
-          <div class="label">Service</div>
-          <h3>ILLUSTRATION</h3>
-          <p>Character design, sprite animation, storyboards, webcomics. Professional illustrator with original IPs.</p>
-        </div>
-      </div>
-
-      <div class="service-card rv rv-d2">
-        <div class="service-card-top" data-label="FILM">
-          <div class="service-badge badge-yellow">🎬</div>
-          <div class="service-icon" style="color:var(--accent-yellow);">FILM</div>
-        </div>
-        <div class="service-card-body">
-          <div class="label">Service</div>
-          <h3>CINEMATICS</h3>
-          <p>UE5 Sequencer, MetaHuman, cinematic cutscenes, virtual production. Engine-driven storytelling.</p>
-        </div>
-      </div>
-
-      <div class="service-card rv rv-d3">
-        <div class="service-card-top" data-label="AI">
-          <div class="service-badge badge-pink">🤖</div>
-          <div class="service-icon" style="color:var(--accent-pink);">AI</div>
-        </div>
-        <div class="service-card-body">
-          <div class="label">Service</div>
-          <h3>AI PIPELINES</h3>
-          <p>ComfyUI workflows, Stable Diffusion, LoRA training, automated content generation. 10x production speed.</p>
-        </div>
-      </div>
+    <div class="contact-links-row rv rv-d3">
+      <a href="https://www.linkedin.com/in/berkaykalender/" target="_blank" class="c-link" data-h>LinkedIn</a>
+      <a href="https://www.behance.net/fancymultimedia" target="_blank" class="c-link" data-h>Behance</a>
+      <a href="https://www.youtube.com/@fancyymultimedia" target="_blank" class="c-link" data-h>YouTube</a>
+      <a href="http://www.instagram.com/fancy.multimedia/" target="_blank" class="c-link" data-h>Instagram</a>
+      <a href="https://www.upwork.com/freelancers/~01f688431e3e1dfc50" target="_blank" class="c-link" data-h>Upwork</a>
+      <a href="https://ko-fi.com/levelupthedev" target="_blank" class="c-link" data-h>☕ Support on Ko-fi</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ═══════ ABOUT ═══════ -->
-<section class="about section-pad" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-title-col">
-        <div class="section-label rv">About</div>
-        <h2 class="section-title rv rv-d1">ABOUT</h2>
-      </div>
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer>
+    <p>© 2026 Berkay Kalender</p>
+    <p>Game Design · Technical Art · Illustration</p>
+    <button class="footer-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-h>↑ BACK TO TOP</button>
+  </footer>
 
-      <div class="about-bio rv rv-d2">
-        <p>
-          <strong>Hey there, I'm Berkay!</strong><br>
-          — <span class="hl">a game designer and technical artist with a background in psychology</span>
-        </p>
-        <p>
-          I design player-centered experiences where psychology meets interactive systems. 
-          With a <strong>BA in Psychology (Honors)</strong> and hands-on game development experience, 
-          I approach every project from both the player's mind and the engine's architecture.
-        </p>
-        <p>
-          Recent work includes <strong>WORN</strong>, a psychology-driven horror game built solo in 48 hours 
-          at Global Game Jam 2026; <strong>The Hatman</strong>, a cinematic cutscene created from scratch in 
-          Unreal Engine 5; and <strong>The Catio</strong>, a 2D mobile platformer shipped through Google Game Academy.
-        </p>
-        <p>
-          I work across <strong>Unreal Engine 5</strong>, <strong>Unity/C#</strong>, <strong>Clip Studio Paint</strong>, 
-          and the <strong>Adobe suite</strong> — from game mechanics and level design to character art and cinematic storytelling.
-        </p>
-        <p>
-          Currently based in <strong>Vilnius</strong>, studying Multimedia Design at <strong>VILNIUS TECH</strong>.
-        </p>
-        <p style="color:var(--accent-cyan);">
-          <strong>Open to opportunities in game design, technical art, and interactive media — let's connect.</strong>
-        </p>
-      </div>
+  <!-- ═══════ JAVASCRIPT ═══════ -->
+  <script>
+    (function () {
+      'use strict';
 
-      <div class="about-roster rv rv-d3">
-        <h3>TOOLKIT</h3>
-        <ul class="roster-list">
-          <li>Unreal Engine 5</li>
-          <li>Unity / C#</li>
-          <li>Clip Studio Paint</li>
-          <li>Adobe Photoshop</li>
-          <li>Adobe Animate</li>
-          <li>Blender</li>
-          <li>ComfyUI / SD</li>
-          <li>Flutter / Dart</li>
-          <li>Figma</li>
-          <li>n8n Automation</li>
-          <li>AutoCAD</li>
-        </ul>
-        
-        <h3 style="margin-top:2rem;">CREDENTIALS</h3>
-        <ul class="roster-list">
-          <li>Google Game Academy</li>
-          <li>Harvard CS50</li>
-          <li>GGJ Lithuania 2026</li>
-          <li>Bilgi Uni · Psych (Hons)</li>
-          <li>VilniusTech · MM Design</li>
-        </ul>
-      </div>
-    </div>
+      /* ——— CUSTOM CURSOR ——— */
+      const cur = document.getElementById('cursor');
+      const fol = document.getElementById('cursorFollow');
+      let mx = 0, my = 0, fx = 0, fy = 0;
 
-    <!-- Awards/Skills Ticker -->
-    <div class="awards-ticker rv">
-      <div class="awards-ticker-inner">
-        <span class="awards-ticker-item">GAME DESIGN <span class="dot"></span></span>
-        <span class="awards-ticker-item">TECHNICAL ART <span class="dot"></span></span>
-        <span class="awards-ticker-item">ILLUSTRATION <span class="dot"></span></span>
-        <span class="awards-ticker-item">CINEMATICS <span class="dot"></span></span>
-        <span class="awards-ticker-item">AI PIPELINES <span class="dot"></span></span>
-        <span class="awards-ticker-item">PSYCHOLOGY <span class="dot"></span></span>
-        <span class="awards-ticker-item">UE5 <span class="dot"></span></span>
-        <span class="awards-ticker-item">UNITY <span class="dot"></span></span>
-        <span class="awards-ticker-item">GAME DESIGN <span class="dot"></span></span>
-        <span class="awards-ticker-item">TECHNICAL ART <span class="dot"></span></span>
-        <span class="awards-ticker-item">ILLUSTRATION <span class="dot"></span></span>
-        <span class="awards-ticker-item">CINEMATICS <span class="dot"></span></span>
-        <span class="awards-ticker-item">AI PIPELINES <span class="dot"></span></span>
-        <span class="awards-ticker-item">PSYCHOLOGY <span class="dot"></span></span>
-        <span class="awards-ticker-item">UE5 <span class="dot"></span></span>
-        <span class="awards-ticker-item">UNITY <span class="dot"></span></span>
-      </div>
-    </div>
-  </div>
-</section>
+      document.addEventListener('mousemove', e => {
+        mx = e.clientX; my = e.clientY;
+        cur.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
+      });
 
-<!-- ═══════ BLOG (SEO) ═══════ -->
-<section class="blog section-pad" id="blog">
-  <div class="container">
-    <div class="section-label rv">Blog</div>
-    <h2 class="section-title rv rv-d1">BLOG</h2>
+      (function animF() {
+        fx += (mx - fx) * 0.1;
+        fy += (my - fy) * 0.1;
+        fol.style.transform = `translate(${fx - 22}px, ${fy - 22}px)`;
+        requestAnimationFrame(animF);
+      })();
 
-    <div class="blog-grid">
-      <article>
-        <a href="#" class="blog-card rv" data-h>
-          <div class="blog-card-img"><div class="placeholder bg-1">📝</div></div>
-          <div class="blog-card-body">
-            <time class="blog-card-date">Feb 23, 2026</time>
-            <h3 class="blog-card-title">Elevate Storytelling with Cutting-Edge Multimedia Techniques</h3>
-            <p class="blog-card-excerpt">Stop scrolling. Seriously. You're about to dive into something that could transform how you tell stories. I'm not just talking about slapping a few images or videos on a page.</p>
-            <span class="blog-card-read">Read More →</span>
-          </div>
-        </a>
-      </article>
+      document.querySelectorAll('[data-h]').forEach(el => {
+        el.addEventListener('mouseenter', () => fol.classList.add('active'));
+        el.addEventListener('mouseleave', () => fol.classList.remove('active'));
+      });
 
-      <article>
-        <a href="#" class="blog-card rv rv-d1" data-h>
-          <div class="blog-card-img"><div class="placeholder bg-2">🎮</div></div>
-          <div class="blog-card-body">
-            <time class="blog-card-date">Feb 6, 2026</time>
-            <h3 class="blog-card-title">48 Hours to Build Something That Scares Me</h3>
-            <p class="blog-card-excerpt">A Solo Developer's Journey Through Global Game Jam 2026. The countdown started at 5 PM on Friday. Forty-eight hours. One theme. Zero sleep.</p>
-            <span class="blog-card-read">Read More →</span>
-          </div>
-        </a>
-      </article>
+      /* ——— SCROLL PROGRESS ——— */
+      const scrollBar = document.getElementById('scrollBar');
+      window.addEventListener('scroll', () => {
+        const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+        scrollBar.style.width = pct + '%';
+      }, { passive: true });
 
-      <article>
-        <a href="#" class="blog-card rv rv-d2" data-h>
-          <div class="blog-card-img"><div class="placeholder bg-3">🎬</div></div>
-          <div class="blog-card-body">
-            <time class="blog-card-date">Jul 14, 2025</time>
-            <h3 class="blog-card-title">How I Created My First Cinematic Cutscene in Unreal Engine</h3>
-            <p class="blog-card-excerpt">When I got the assignment to create a cinematic cutscene in Unreal Engine, I had zero real experience with it. I wasn't a 3D animator.</p>
-            <span class="blog-card-read">Read More →</span>
-          </div>
-        </a>
-      </article>
+      /* ——— REVEAL ON SCROLL ——— */
+      const rvObs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+      }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
 
-      <article>
-        <a href="#" class="blog-card rv" data-h>
-          <div class="blog-card-img"><div class="placeholder bg-1">🎨</div></div>
-          <div class="blog-card-body">
-            <time class="blog-card-date">Sep 3, 2024</time>
-            <h3 class="blog-card-title">Celebrating 10 Years of Mario Ultrastar: A Remastered Sprite Animation Series</h3>
-            <p class="blog-card-excerpt">A decade of pixel art, animation, and creative evolution — remastered and revisited for a new generation of viewers.</p>
-            <span class="blog-card-read">Read More →</span>
-          </div>
-        </a>
-      </article>
+      document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
 
-      <article>
-        <a href="#" class="blog-card rv rv-d1" data-h>
-          <div class="blog-card-img"><div class="placeholder bg-2">✏️</div></div>
-          <div class="blog-card-body">
-            <time class="blog-card-date">Aug 22, 2024</time>
-            <h3 class="blog-card-title">About Designing Relatable and Unique Characters</h3>
-            <p class="blog-card-excerpt">As a writer and illustrator working on a webcomic, I know that character design goes far beyond just how a character looks. It's about psychology.</p>
-            <span class="blog-card-read">Read More →</span>
-          </div>
-        </a>
-      </article>
+      /* ——— MOBILE NAV ——— */
+      const burger = document.getElementById('burger');
+      const mobileMenu = document.getElementById('mobileMenu');
+      burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+      document.querySelectorAll('.mm-link').forEach(l => {
+        l.addEventListener('click', () => mobileMenu.classList.remove('open'));
+      });
 
-      <article>
-        <a href="#" class="blog-card rv rv-d2" data-h>
-          <div class="blog-card-img"><div class="placeholder bg-3">🚀</div></div>
-          <div class="blog-card-body">
-            <time class="blog-card-date">Feb 19, 2026</time>
-            <h3 class="blog-card-title">Creating Impactful Video Art Online</h3>
-            <p class="blog-card-excerpt">In the digital age, video art has become a powerful medium for creative expression. The ability to craft compelling visual stories through moving images.</p>
-            <span class="blog-card-read">Read More →</span>
-          </div>
-        </a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════ CONTACT ═══════ -->
-<section class="contact" id="contact">
-  <div class="section-label rv" style="justify-content:center; display:flex;">Get In Touch</div>
-  <h2 class="contact-title rv rv-d1">LET'S CREATE<br>SOMETHING <span class="serif">together.</span></h2>
-  <p class="contact-sub rv rv-d2">
-    Open for game design, technical art, illustration commissions, 
-    AI pipeline consulting, and creative collaborations.
-  </p>
-  <div class="contact-links-row rv rv-d3">
-    <a href="https://www.linkedin.com/in/berkaykalender/" target="_blank" class="c-link" data-h>LinkedIn</a>
-    <a href="https://www.behance.net/fancymultimedia" target="_blank" class="c-link" data-h>Behance</a>
-    <a href="https://www.youtube.com/@fancyymultimedia" target="_blank" class="c-link" data-h>YouTube</a>
-    <a href="http://www.instagram.com/fancy.multimedia/" target="_blank" class="c-link" data-h>Instagram</a>
-    <a href="https://www.upwork.com/freelancers/~01f688431e3e1dfc50" target="_blank" class="c-link" data-h>Upwork</a>
-    <a href="https://coff.ee/fancymultimedia" target="_blank" class="c-link" data-h>☕ Buy Me a Coffee</a>
-  </div>
-</section>
-
-<!-- ═══════ FOOTER ═══════ -->
-<footer>
-  <p>© 2026 Berkay Kalender</p>
-  <p>Game Design · Technical Art · Illustration</p>
-  <button class="footer-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" data-h>↑ BACK TO TOP</button>
-</footer>
-
-<!-- ═══════ JAVASCRIPT ═══════ -->
-<script>
-(function() {
-'use strict';
-
-/* ——— CUSTOM CURSOR ——— */
-const cur = document.getElementById('cursor');
-const fol = document.getElementById('cursorFollow');
-let mx = 0, my = 0, fx = 0, fy = 0;
-
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cur.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
-});
-
-(function animF() {
-  fx += (mx - fx) * 0.1;
-  fy += (my - fy) * 0.1;
-  fol.style.transform = `translate(${fx - 22}px, ${fy - 22}px)`;
-  requestAnimationFrame(animF);
-})();
-
-document.querySelectorAll('[data-h]').forEach(el => {
-  el.addEventListener('mouseenter', () => fol.classList.add('active'));
-  el.addEventListener('mouseleave', () => fol.classList.remove('active'));
-});
-
-/* ——— SCROLL PROGRESS ——— */
-const scrollBar = document.getElementById('scrollBar');
-window.addEventListener('scroll', () => {
-  const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
-  scrollBar.style.width = pct + '%';
-}, { passive: true });
-
-/* ——— REVEAL ON SCROLL ——— */
-const rvObs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
-}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
-
-document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
-
-/* ——— MOBILE NAV ——— */
-const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-burger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
-document.querySelectorAll('.mm-link').forEach(l => {
-  l.addEventListener('click', () => mobileMenu.classList.remove('open'));
-});
-
-/* ——— SMOOTH SCROLL ——— */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    const t = document.querySelector(a.getAttribute('href'));
-    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-
-/* ——— HERO PARTICLES ——— */
-const particleContainer = document.getElementById('particles');
-for (let i = 0; i < 40; i++) {
-  const p = document.createElement('div');
-  p.className = 'particle';
-  p.style.left = Math.random() * 100 + '%';
-  p.style.top = Math.random() * 100 + '%';
-  p.style.animationDelay = (Math.random() * 5) + 's';
-  p.style.animationDuration = (3 + Math.random() * 4) + 's';
-  p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
-  particleContainer.appendChild(p);
-}
-
-/* ——— SCROLL-DRIVEN VIDEO BACKGROUND ——— */
-const bgVideo = document.getElementById('bgVideo');
-const worksReel = document.getElementById('worksReel');
-const vFill = document.getElementById('vFill');
-const vLabel = document.getElementById('vLabel');
-let videoReady = false;
-
-bgVideo.addEventListener('loadedmetadata', () => { videoReady = true; });
-bgVideo.load();
-
-function fmtTime(s) {
-  const m = Math.floor(s / 60);
-  const sec = Math.floor(s % 60);
-  return String(m).padStart(2,'0') + ':' + String(sec).padStart(2,'0');
-}
-
-window.addEventListener('scroll', () => {
-  if (!videoReady || !worksReel) return;
-  const rect = worksReel.getBoundingClientRect();
-  const scrollH = worksReel.offsetHeight - window.innerHeight;
-  if (scrollH <= 0) return;
-  
-  const progress = Math.max(0, Math.min(1, -rect.top / scrollH));
-  
-  const targetTime = progress * bgVideo.duration;
-  if (Math.abs(bgVideo.currentTime - targetTime) > 0.05) {
-    bgVideo.currentTime = targetTime;
-  }
-  
-  vFill.style.width = (progress * 100) + '%';
-  vLabel.textContent = 'SHOWREEL · ' + fmtTime(targetTime);
-}, { passive: true });
-
-/* ——— PIXEL DISTORTION HOVER EFFECT ——— */
-document.querySelectorAll('[data-distort]').forEach(container => {
-  const canvas = container.querySelector('canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  let animId = null;
-  let isHovering = false;
-  let blocks = [];
-  
-  const card = container.closest('.work-card');
-  
-  function initCanvas() {
-    const rect = container.getBoundingClientRect();
-    canvas.width = rect.width;
-    canvas.height = rect.height;
-  }
-  
-  function createBlocks() {
-    blocks = [];
-    const bSize = 8;
-    const cols = Math.ceil(canvas.width / bSize);
-    const rows = Math.ceil(canvas.height / bSize);
-    
-    for (let r = 0; r < rows; r++) {
-      for (let c = 0; c < cols; c++) {
-        blocks.push({
-          x: c * bSize,
-          y: r * bSize,
-          w: bSize,
-          h: bSize,
-          ox: 0, oy: 0,
-          tx: (Math.random() - 0.5) * 30,
-          ty: (Math.random() - 0.5) * 20,
-          delay: Math.random() * 0.5,
-          speed: 0.04 + Math.random() * 0.06,
-          glitchChance: Math.random(),
-          opacity: 1
+      /* ——— SMOOTH SCROLL ——— */
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          const t = document.querySelector(a.getAttribute('href'));
+          if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
-      }
-    }
-  }
+      });
 
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    blocks.forEach(b => {
-      if (isHovering) {
-        b.ox += (b.tx - b.ox) * b.speed;
-        b.oy += (b.ty - b.oy) * b.speed;
-      } else {
-        b.ox += (0 - b.ox) * 0.12;
-        b.oy += (0 - b.oy) * 0.12;
+      /* ——— HERO PARTICLES ——— */
+      const particleContainer = document.getElementById('particles');
+      for (let i = 0; i < 40; i++) {
+        const p = document.createElement('div');
+        p.className = 'particle';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.top = Math.random() * 100 + '%';
+        p.style.animationDelay = (Math.random() * 5) + 's';
+        p.style.animationDuration = (3 + Math.random() * 4) + 's';
+        p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
+        particleContainer.appendChild(p);
       }
-      
-      // Glitch color blocks
-      if (isHovering && b.glitchChance > 0.85 && Math.random() > 0.9) {
-        const colors = ['rgba(0,232,212,0.4)', 'rgba(255,106,61,0.3)', 'rgba(255,61,110,0.3)', 'rgba(26,58,255,0.3)'];
-        ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
-        ctx.fillRect(b.x + b.ox, b.y + b.oy, b.w, b.h);
-      }
-      
-      // Scanline glitch effect
-      if (isHovering && Math.random() > 0.98) {
-        ctx.fillStyle = 'rgba(0,232,212,0.08)';
-        ctx.fillRect(0, b.y + b.oy, canvas.width, 2);
-      }
-    });
-    
-    // Occasional horizontal glitch bars
-    if (isHovering && Math.random() > 0.93) {
-      const y = Math.random() * canvas.height;
-      const h = 2 + Math.random() * 6;
-      ctx.fillStyle = `rgba(0,232,212,${0.1 + Math.random() * 0.15})`;
-      ctx.fillRect(0, y, canvas.width, h);
-    }
-    
-    animId = requestAnimationFrame(animate);
-  }
-  
-  card.addEventListener('mouseenter', () => {
-    initCanvas();
-    createBlocks();
-    isHovering = true;
-    if (!animId) animate();
-  });
-  
-  card.addEventListener('mouseleave', () => {
-    isHovering = false;
-    setTimeout(() => {
-      if (!isHovering && animId) {
-        cancelAnimationFrame(animId);
-        animId = null;
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-      }
-    }, 600);
-  });
-});
 
-/* ——— ACTIVE NAV LINK ——— */
-const sections = document.querySelectorAll('section[id]');
-const navLinksAll = document.querySelectorAll('.nav-links a');
+      /* ——— SCROLL-DRIVEN VIDEO BACKGROUND ——— */
+      const bgVideo = document.getElementById('bgVideo');
+      const worksReel = document.getElementById('worksReel');
+      const vFill = document.getElementById('vFill');
+      const vLabel = document.getElementById('vLabel');
+      let videoReady = false;
 
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 200) current = s.id;
-  });
-  navLinksAll.forEach(a => {
-    a.classList.remove('active');
-    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
-  });
-}, { passive: true });
+      bgVideo.addEventListener('loadedmetadata', () => { videoReady = true; });
+      bgVideo.load();
 
-})();
-</script>
+      function fmtTime(s) {
+        const m = Math.floor(s / 60);
+        const sec = Math.floor(s % 60);
+        return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!videoReady || !worksReel) return;
+        const rect = worksReel.getBoundingClientRect();
+        const scrollH = worksReel.offsetHeight - window.innerHeight;
+        if (scrollH <= 0) return;
+
+        const progress = Math.max(0, Math.min(1, -rect.top / scrollH));
+
+        const targetTime = progress * bgVideo.duration;
+        if (Math.abs(bgVideo.currentTime - targetTime) > 0.05) {
+          bgVideo.currentTime = targetTime;
+        }
+
+        vFill.style.width = (progress * 100) + '%';
+        vLabel.textContent = 'SHOWREEL · ' + fmtTime(targetTime);
+      }, { passive: true });
+
+      /* ——— PIXEL DISTORTION HOVER EFFECT ——— */
+      document.querySelectorAll('[data-distort]').forEach(container => {
+        const canvas = container.querySelector('canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let animId = null;
+        let isHovering = false;
+        let blocks = [];
+
+        const card = container.closest('.work-card');
+
+        function initCanvas() {
+          const rect = container.getBoundingClientRect();
+          canvas.width = rect.width;
+          canvas.height = rect.height;
+        }
+
+        function createBlocks() {
+          blocks = [];
+          const bSize = 8;
+          const cols = Math.ceil(canvas.width / bSize);
+          const rows = Math.ceil(canvas.height / bSize);
+
+          for (let r = 0; r < rows; r++) {
+            for (let c = 0; c < cols; c++) {
+              blocks.push({
+                x: c * bSize,
+                y: r * bSize,
+                w: bSize,
+                h: bSize,
+                ox: 0, oy: 0,
+                tx: (Math.random() - 0.5) * 30,
+                ty: (Math.random() - 0.5) * 20,
+                delay: Math.random() * 0.5,
+                speed: 0.04 + Math.random() * 0.06,
+                glitchChance: Math.random(),
+                opacity: 1
+              });
+            }
+          }
+        }
+
+        function animate() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          blocks.forEach(b => {
+            if (isHovering) {
+              b.ox += (b.tx - b.ox) * b.speed;
+              b.oy += (b.ty - b.oy) * b.speed;
+            } else {
+              b.ox += (0 - b.ox) * 0.12;
+              b.oy += (0 - b.oy) * 0.12;
+            }
+
+            // Glitch color blocks
+            if (isHovering && b.glitchChance > 0.85 && Math.random() > 0.9) {
+              const colors = ['rgba(0,232,212,0.4)', 'rgba(255,106,61,0.3)', 'rgba(255,61,110,0.3)', 'rgba(26,58,255,0.3)'];
+              ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
+              ctx.fillRect(b.x + b.ox, b.y + b.oy, b.w, b.h);
+            }
+
+            // Scanline glitch effect
+            if (isHovering && Math.random() > 0.98) {
+              ctx.fillStyle = 'rgba(0,232,212,0.08)';
+              ctx.fillRect(0, b.y + b.oy, canvas.width, 2);
+            }
+          });
+
+          // Occasional horizontal glitch bars
+          if (isHovering && Math.random() > 0.93) {
+            const y = Math.random() * canvas.height;
+            const h = 2 + Math.random() * 6;
+            ctx.fillStyle = `rgba(0,232,212,${0.1 + Math.random() * 0.15})`;
+            ctx.fillRect(0, y, canvas.width, h);
+          }
+
+          animId = requestAnimationFrame(animate);
+        }
+
+        card.addEventListener('mouseenter', () => {
+          initCanvas();
+          createBlocks();
+          isHovering = true;
+          if (!animId) animate();
+        });
+
+        card.addEventListener('mouseleave', () => {
+          isHovering = false;
+          setTimeout(() => {
+            if (!isHovering && animId) {
+              cancelAnimationFrame(animId);
+              animId = null;
+              ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+          }, 600);
+        });
+      });
+
+      /* ——— ACTIVE NAV LINK ——— */
+      const sections = document.querySelectorAll('section[id]');
+      const navLinksAll = document.querySelectorAll('.nav-links a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(s => {
+          if (window.scrollY >= s.offsetTop - 200) current = s.id;
+        });
+        navLinksAll.forEach(a => {
+          a.classList.remove('active');
+          if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+        });
+      }, { passive: true });
+
+    })();
+  </script>
 </body>
+
 </html>
