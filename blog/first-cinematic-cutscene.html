@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I Created My First Cinematic Cutscene in Unreal Engine — Berkay Kalender</title>
+<meta name="description" content="From zero 3D animation experience to a full cinematic cutscene in Unreal Engine 5 using Sequencer, MetaHuman, and Blender.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}:root{--bg-dark:#0a0a0f;--bg-elevated:#171930;--text-white:#f5f2eb;--text-gray:#c8c5d0;--text-muted:#8a8698;--accent-cyan:#00e8d4;--font-display:'Bebas Neue',sans-serif;--font-body:'Space Grotesk',sans-serif;--font-serif:'Instrument Serif',serif;--font-mono:'JetBrains Mono',monospace;--ease-expo:cubic-bezier(0.16,1,0.3,1)}html{scroll-behavior:smooth}body{background:var(--bg-dark);color:var(--text-white);font-family:var(--font-body);font-size:15px;line-height:1.7;overflow-x:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}::selection{background:var(--accent-cyan);color:var(--bg-dark)}.nav{position:fixed;top:0;left:0;right:0;height:60px;z-index:9000;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(10,10,15,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.04)}.nav-logo{font-family:var(--font-display);font-size:1.6rem;color:var(--text-white)}.nav-logo span{color:var(--accent-cyan)}.nav-links{display:flex;gap:2rem;list-style:none}.nav-links a{font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);transition:color .3s}.nav-links a:hover{color:var(--text-white)}.nav-cta{font-weight:600;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:var(--text-white);color:var(--bg-dark);padding:.6rem 1.4rem;border:none;border-radius:4px;transition:background .3s}.nav-cta:hover{background:var(--accent-cyan)}@media(max-width:900px){.nav{padding:0 1.2rem}.nav-links,.nav-cta{display:none}}.article-hero{padding:8rem 2rem 3rem;text-align:center;max-width:800px;margin:0 auto}.article-back{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:2rem;transition:color .3s}.article-back:hover{color:var(--accent-cyan)}.article-date{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.12em;color:var(--text-muted);margin-bottom:1rem;display:block}.article-title{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);line-height:1;letter-spacing:.01em;margin-bottom:1.5rem}.article-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem;margin-bottom:2rem}.article-tag{font-family:var(--font-mono);font-size:.5rem;padding:.25rem .6rem;border:1px solid rgba(255,255,255,.1);border-radius:4px;color:var(--text-muted)}.article-cover{max-width:900px;margin:0 auto 3rem;border-radius:12px;overflow:hidden}.article-cover img{width:100%;display:block}.article-body{max-width:700px;margin:0 auto;padding:0 2rem 5rem}.article-body p{font-size:.92rem;line-height:1.9;color:var(--text-gray);margin-bottom:1.5rem}.article-body p strong{color:var(--text-white);font-weight:600}.article-body h2{font-family:var(--font-display);font-size:1.8rem;margin:2.5rem 0 1rem;color:var(--text-white);letter-spacing:.02em}.article-body blockquote{border-left:3px solid var(--accent-cyan);padding:.8rem 1.5rem;margin:1.5rem 0;background:rgba(0,232,212,.03);border-radius:0 6px 6px 0;font-style:italic;color:var(--text-gray)}.article-body img{width:100%;border-radius:8px;margin:2rem 0}.article-body a{color:var(--accent-cyan);text-decoration:underline;text-underline-offset:3px}.article-body a:hover{opacity:.8}.article-cta{text-align:center;padding:3rem 2rem 5rem;max-width:700px;margin:0 auto;border-top:1px solid rgba(255,255,255,.04)}.article-cta p{font-size:.85rem;color:var(--text-gray);margin-bottom:1.5rem}.article-cta-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem}.article-cta-link{font-weight:500;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);border:1px solid rgba(255,255,255,.08);padding:.6rem 1.2rem;border-radius:100px;transition:all .3s}.article-cta-link:hover{border-color:var(--accent-cyan);color:var(--accent-cyan)}footer{padding:2rem 3rem;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;flex-wrap:wrap;gap:1rem}footer p{font-family:var(--font-mono);font-size:.55rem;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase}</style>
+</head>
+<body>
+<nav class="nav"><a href="../index.html" class="nav-logo">BK<span>.</span></a><ul class="nav-links"><li><a href="../index.html#works">Work</a></li><li><a href="../index.html#services">Services</a></li><li><a href="../index.html#about">About</a></li><li><a href="../index.html#blog">Blog</a></li></ul><a href="../index.html#contact" class="nav-cta">Let's Talk</a></nav>
+
+<header class="article-hero">
+  <a href="../index.html#blog" class="article-back">← Back to Blog</a>
+  <time class="article-date">Jul 14, 2025</time>
+  <h1 class="article-title">How I Created My First Cinematic Cutscene in Unreal Engine</h1>
+  <div class="article-tags">
+    <span class="article-tag">Unreal Engine</span>
+    <span class="article-tag">Cinematic</span>
+    <span class="article-tag">MetaHuman</span>
+    <span class="article-tag">Sequencer</span>
+    <span class="article-tag">Blender</span>
+  </div>
+</header>
+
+<div class="article-cover">
+  <!-- ADD COVER IMAGE: <img src="../img/blog/hatman-cutscene.jpg" alt="The Hatman Cinematic Cutscene"> -->
+</div>
+
+<article class="article-body">
+
+  <blockquote>When I got the assignment to create a cinematic cutscene in Unreal Engine, I had zero real experience with it. I wasn't a 3D animator, or experienced in Unreal. YET.</blockquote>
+
+  <p>When I got the assignment to create a cinematic cutscene in Unreal Engine, I had no real experience with it. I wasn't a 3D animator, or experienced in Unreal. YET. I was someone who cared about story, atmosphere, and cinematic impact. But I knew I had to figure it out on my own. What followed was two weeks of doing things the hard way, breaking everything multiple times, and somehow, finishing a cutscene I'm genuinely proud of.</p>
+
+  <p>The cutscene is from my fictional game <strong>The Hatman</strong>, a psychological horror where the main character, Maria, a woman trapped in a decaying subconscious world, collecting fragments of a broken mirror she believes will set her free. But what she finally reassembles the mirror, the truth is far worse: the gate she opens doesn't lead out, deeper in. She comes face to face with Hatman, the shadow entity born from her own denial. This scene marks the turning point in the story. Maria stops running. And starts <em>staring</em>.</p>
+
+  <img src="../img/blog/hatman-2.jpg" alt="The Hatman scene">
+
+  <p>I built the entire scene in Unreal Engine 5 using Sequencer on a MetaHuman character, a Megascans environment, Mixamo for body animation, and Bone Blender to fix a rigging issue I didn't see coming. I struggled with animation imports, lighting issues, memory crashes — and animating facial expressions without an iPhone (yes, really).</p>
+
+  <p>One of the biggest challenges was attaching clothing to my MetaHuman character, since the outfit used didn't come rigged. I had to go into Blender, convert it to a skeletal mesh, and then use Unreal's "Set Master Pose Component" in Blueprint to sync everything. That moment when it finally worked? Genius.</p>
+
+  <p>Then came Sequencer. That's where everything came together: camera movement, animation timing, lighting, even dialogue. I approached the scene like a director, choosing focal lengths to show power shifts, tilts, rack to emphasize emotion, and include slow-to-track for drama, born and bred in discussion. I followed the 8 Cs of Cinematography: camera angles, composition, cutting, close-ups, and continuity. The more I focused on visual storytelling and mood, the more the scene started to take shape.</p>
+
+  <img src="../img/blog/hatman-1.jpg" alt="Sequencer timeline"
+
+  <p>Of course, it wasn't all smooth. Unreal Engine crashed a lot. Sometimes it forgot memory overloads that made rendering impossible. Sometime facial animations would randomly break just because I rotated the character too much. There were moments where I genuinely wanted to give up, especially when the lighting wouldn't render properly, or the texture busted on something else collapsed five minutes before deadline. But each issue taught me something. I learned to manage video memory by disabling asset streams, lowering assets the numbers, and reassigning content, minimal but intentional. I also learned that rendering in short clips instead of all at once saved my project more than once.</p>
+
+  <p>After exporting all the shots, I took the sequences into Premiere Pro. There, I added background ambiance, synced up AI-generated voice acting, and added subtle reverb to the hatman's lines. I balanced the audio, added cinematic fades, and cleaned up the pacing. It wasn't just stitching — it was the emotions forced to that pulled it all together.</p>
+
+  <p>This outcome may not be a masterpiece, but it's personal. It taught me more than any tutorial could, because I had to figure it out while building something I believed in. It made me think like a director, not just a psychology student taking an elective course from the game department. And more than anything, it reminded me that even with limited tools and knowledge, I can still tell a story that hits somewhere deep.</p>
+
+  <p>If you're curious how it turned out, you can watch the full cutscene here: <a href="https://www.youtube.com/@fancyymultimedia" target="_blank">The Hatman — cinematic cutscene (YouTube)</a></p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-_u4GSk6p1g?si=D86U-6ZxKaiSGq5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  
+  <p>Thanks for reading. If you're someone who's just starting and feels overwhelmed: just start. Focus on one shot. One emotion. One scene. That's how this all came to life.</p>
+
+  <p><em>Don't forget to subscribe to <a href="https://www.youtube.com/@fancyymultimedia" target="_blank">my YouTube channel</a> and hit the notification bell so you're always updated on new animations and creative projects.</em></p>
+
+  <p><em>P.S. If you like my work and want to see more content, support me on my <a href="https://ko-fi.com/levelupthedev" target="_blank">Ko-fi</a> page!</em></p>
+
+</article>
+
+<div class="article-cta">
+  <p>Enjoyed the read? Support the journey.</p>
+  <div class="article-cta-links">
+    <a href="https://ko-fi.com/levelupthedev" target="_blank" class="article-cta-link">Support on Ko-fi</a>
+    <a href="https://www.youtube.com/@fancyymultimedia" target="_blank" class="article-cta-link">YouTube</a>
+    <a href="https://www.linkedin.com/in/berkaykalender/" target="_blank" class="article-cta-link">LinkedIn</a>
+  </div>
+</div>
+<footer><p>© 2026 Berkay Kalender</p><p>Game Design · Technical Art · Illustration</p></footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>48 Hours to Build Something That Scares Me — Berkay Kalender</title>
+<meta name="description" content="A Solo Developer's Journey Through Global Game Jam 2026. Building WORN, a psychology-driven horror game in 48 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg-dark:#0a0a0f;--bg-elevated:#171930;--text-white:#f5f2eb;--text-gray:#c8c5d0;--text-muted:#8a8698;--accent-cyan:#00e8d4;--font-display:'Bebas Neue',sans-serif;--font-body:'Space Grotesk',sans-serif;--font-serif:'Instrument Serif',serif;--font-mono:'JetBrains Mono',monospace;--ease-expo:cubic-bezier(0.16,1,0.3,1)}
+html{scroll-behavior:smooth}
+body{background:var(--bg-dark);color:var(--text-white);font-family:var(--font-body);font-size:15px;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+::selection{background:var(--accent-cyan);color:var(--bg-dark)}
+.nav{position:fixed;top:0;left:0;right:0;height:60px;z-index:9000;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(10,10,15,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.04)}
+.nav-logo{font-family:var(--font-display);font-size:1.6rem;color:var(--text-white)}.nav-logo span{color:var(--accent-cyan)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-weight:600;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);transition:color .3s}.nav-links a:hover{color:var(--text-white)}
+.nav-cta{font-weight:600;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:var(--text-white);color:var(--bg-dark);padding:.6rem 1.4rem;border:none;border-radius:4px;transition:background .3s}.nav-cta:hover{background:var(--accent-cyan)}
+@media(max-width:900px){.nav{padding:0 1.2rem}.nav-links,.nav-cta{display:none}}
+.article-hero{padding:8rem 2rem 3rem;text-align:center;max-width:800px;margin:0 auto}
+.article-back{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--font-mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:2rem;transition:color .3s}.article-back:hover{color:var(--accent-cyan)}
+.article-date{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.12em;color:var(--text-muted);margin-bottom:1rem;display:block}
+.article-title{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);line-height:1;letter-spacing:.01em;margin-bottom:.8rem}
+.article-subtitle{font-family:var(--font-serif);font-style:italic;font-size:1.1rem;color:var(--text-muted);margin-bottom:1.5rem}
+.article-tags{display:flex;justify-content:center;flex-wrap:wrap;gap:.4rem;margin-bottom:2rem}
+.article-tag{font-family:var(--font-mono);font-size:.5rem;padding:.25rem .6rem;border:1px solid rgba(255,255,255,.1);border-radius:4px;color:var(--text-muted)}
+.article-cover{max-width:900px;margin:0 auto 3rem;border-radius:12px;overflow:hidden}
+.article-cover img{width:100%;display:block}
+.article-body{max-width:700px;margin:0 auto;padding:0 2rem 5rem}
+.article-body p{font-size:.92rem;line-height:1.9;color:var(--text-gray);margin-bottom:1.5rem}
+.article-body p strong{color:var(--text-white);font-weight:600}
+.article-body h2{font-family:var(--font-display);font-size:1.8rem;margin:2.5rem 0 1rem;color:var(--text-white);letter-spacing:.02em}
+.article-body blockquote{border-left:3px solid var(--accent-cyan);padding:.8rem 1.5rem;margin:1.5rem 0;background:rgba(0,232,212,.03);border-radius:0 6px 6px 0;font-style:italic;color:var(--text-gray)}
+.article-body img{width:100%;border-radius:8px;margin:2rem 0}
+.article-body a{color:var(--accent-cyan);text-decoration:underline;text-underline-offset:3px}.article-body a:hover{opacity:.8}
+.article-body ul,.article-body ol{margin:1rem 0 1.5rem 1.5rem;color:var(--text-gray)}.article-body li{margin-bottom:.5rem;font-size:.92rem}
+.img-caption{font-family:var(--font-mono);font-size:.6rem;color:var(--text-muted);text-align:center;margin-top:-1rem;margin-bottom:2rem}
+.article-details{background:var(--bg-elevated);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:1.5rem 2rem;margin:2rem 0}
+.article-details h3{font-family:var(--font-display);font-size:1.2rem;margin-bottom:.8rem;letter-spacing:.03em}
+.article-details p{font-size:.8rem;margin-bottom:.4rem}
+.article-cta{text-align:center;padding:3rem 2rem 5rem;max-width:700px;margin:0 auto;border-top:1px solid rgba(255,255,255,.04)}
+.article-cta p{font-size:.85rem;color:var(--text-gray);margin-bottom:1.5rem}
+.article-cta-links{display:flex;justify-content:center;flex-wrap:wrap;gap:.6rem}
+.article-cta-link{font-weight:500;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);border:1px solid rgba(255,255,255,.08);padding:.6rem 1.2rem;border-radius:100px;transition:all .3s}.article-cta-link:hover{border-color:var(--accent-cyan);color:var(--accent-cyan)}
+.article-share{display:flex;justify-content:center;gap:1rem;margin-top:2rem}
+.article-share a{font-size:.7rem;color:var(--text-muted);transition:color .3s}.article-share a:hover{color:var(--accent-cyan)}
+footer{padding:2rem 3rem;border-top:1px solid rgba(255,255,255,.04);display:flex;justify-content:space-between;align-items:center;max-width:1400px;margin:0 auto;flex-wrap:wrap;gap:1rem}
+footer p{font-family:var(--font-mono);font-size:.55rem;color:var(--text-muted);letter-spacing:.08em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">BK<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html#works">Work</a></li>
+    <li><a href="../index.html#services">Services</a></li>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#blog">Blog</a></li>
+  </ul>
+  <a href="../index.html#contact" class="nav-cta">Let's Talk</a>
+</nav>
+
+<header class="article-hero">
+  <a href="../index.html#blog" class="article-back">← Back to Blog</a>
+  <time class="article-date">Feb 6, 2026</time>
+  <h1 class="article-title">48 Hours to Build Something That Scares Me</h1>
+  <p class="article-subtitle">A Solo Developer's Journey Through Global Game Jam 2026</p>
+  <div class="article-tags">
+    <span class="article-tag">Game Jam</span>
+    <span class="article-tag">Horror</span>
+    <span class="article-tag">Unreal Engine</span>
+    <span class="article-tag">Psychology</span>
+    <span class="article-tag">Solo Dev</span>
+  </div>
+</header>
+
+<div class="article-cover">
+  <img src="../img/blog/worn.jpg" alt="WORN - Global Game Jam 2026">
+</div>
+
+<article class="article-body">
+
+  <p>The countdown started at 5 PM on Friday. Forty-eight hours. One theme. No team. Just me, a room full of developers from entirely different backgrounds, and a decision I'd already made: this one would be mine alone.</p>
+
+  <p>When the theme appeared, <strong>WORN</strong>, the noise in the room faded.</p>
+
+  <p>My mind went somewhere specific. Not to superheroes. Not to treasure maps or trails.</p>
+
+  <p>To a question I'd been circling in my Psychology studies: <em>What happens when the face we show the world becomes more familiar than our own?</em></p>
+
+  <p>I opened a blank project and started building.</p>
+
+  <h2>The Concept</h2>
+
+  <p>WORN would place players in a world far more intimate than most horror games dare. You wouldn't have weapons, you wouldn't have a way out. Instead, they'd ask you to stare at the mirror: see what this character does, what's pressed in the drawer. That's a question of identity. You accept one of those horrible options, and they are you. You choose. But that choice: you will pay.</p>
+
+  <p>The camera system started as a functional decision. First-person felt right for vulnerability. When you see what this character does, you're placed in the danger. Their position of control seems real for the shattered mirror reflections, distorted memories. Then I moved it.</p>
+
+  <p>The shift wasn't just mechanical. When the player puts on the mask, they literally step outside themselves. They watch their own character from behind. The perspective change is the disassociation.</p>
+
+  <p>This accident became the game's thesis statement. I hadn't planned it; the constraint revealed it.</p>
+
+  <img src="../img/blog/gamejam.jpg" alt="WORN gameplay screenshot">
+
+  <h2>Building Under Pressure</h2>
+
+  <p>By 2 AM, nothing worked. The mesh topology broke. NPCs created explosions of polygon scatter. The AI couldn't pathing. Four hours of debugging later, I found the problem: a single variable that wasn't returning properly.</p>
+
+  <p>The lesson burned into my memory: <strong>after hour 16, only polish.</strong> No new systems, no restructuring. The risk compounds faster than the reward.</p>
+
+  <p>I kept mine small. It wasn't too simple, either. The theme demanded something I'd questioned my entire Psychology career: what happens if we live as someone else? Those masked figures lean toward chaos. Slowly, each one moulding up and reminding her of her mask.</p>
+
+  <p>The faces are the mask and the lies and self — from the player's face. A single line of text appears: <em>"We are in hiding from each other."</em></p>
+
+  <p>The narrative was simple: "There's only one path, and it destroys us in half." For the game mechanic: the player felt the same road on the game screen.</p>
+
+  <p>The horror isn't the chase. It's the breakdown we create when every role becomes eventually ourselves.</p>
+
+  <p>The build started crashing with twelve hours remaining. Progress bars resetting. Scenes erasing. Minimal assembly of something that wouldn't survive. The exported version missed at minimum 15-20 assets. I had to restart.</p>
+
+  <p>The game was 5 problems behind, several new sub-level state possibilities. The AI accidentally got confused. The 'cinematic ending' — most likely doesn't work at the last batch.</p>
+
+  <p>But it worked. An idea that lived only in my head 48 hours prior was now something anyone could download and experience.</p>
+
+  <h2>What I Learned</h2>
+
+  <p><strong>Constraints don't limit creativity. They focus it.</strong><br>
+  My original scope included branching storylines, multiple environments, dynamic dialogue, original voice acting. The final game has a solid little core. A REAL prototype, and it ran and it worked and I wanted a full 4 AM finish.</p>
+
+  <p><strong>Every bug improved the mood.</strong> The limits are forced and the filters became a deliberate focus, something honest.</p>
+
+  <p><strong>Tools serve intention, not the reverse.</strong><br>
+  I approached this with barely enough Unreal Engine Blueprint proficiency. I didn't try to build a complete power sweep. It reached the Blueprint visual scripting wall — through visual scripting.</p>
+
+  <p><strong>Completion creates momentum.</strong><br>
+  A finished piece, regardless of quality, produces more energy, as unfinished ideas never consume and never visualise their own possibility.</p>
+
+  <p><strong>WORN is imperfect.</strong> I see the rough edges every time I look at it. But to some, the feel matters more than any individual flaw.</p>
+
+  <p><strong>The best work often emerges from discomfort.</strong><br>
+  I was not qualified to make this game. Beyond expertise in systems or structure, not equipped problems I didn't understand — yet it was my discomfort with that enough information.</p>
+
+  <p>The discomfort was the point. Growth doesn't happen inside competence. It happens at the edge.</p>
+
+  <h2>Final Thoughts</h2>
+
+  <p>Game jams compress an entire creative cycle into a single weekend. The pressure reveals patterns both productive and destructive that longer timelines skim over.</p>
+
+  <p>I learned how to build under constraints. I learned what type of work drains me the fastest choices I needed that my instinct was "one more thing" is real and also dangerous. Most importantly, I learned that starting scared doesn't predict finishing scared.</p>
+
+  <p>If you're considering a game jam or any creative challenge that feels beyond your current ability: do it.</p>
+
+  <p>The gap between "not ready" and "ready" is smaller than it appears. Often, the only way to close it is to begin before you're sure you can finish.</p>
+
+  <p><em>You might surprise yourself.</em></p>
+
+  <div class="article-details">
+    <h3>Project Details</h3>
+    <p><strong>Title:</strong> WORN</p>
+    <p><strong>Genre:</strong> Psychological Horror</p>
+    <p><strong>Engine:</strong> Unreal Engine 5.4</p>
+    <p><strong>Development Time:</strong> 48 hours</p>
+    <p><strong>Team Size:</strong> Solo</p>
+    <p><strong>Event:</strong> Global Game Jam 2026, Lithuania</p>
+    <p><strong>Links:</strong> <a href="#">Play WORN (Itch.io)</a> | <a href="#">GGJ Page</a></p>
+  </div>
+
+  <p><em>Berkay Kalender is a Multimedia Design student at Vilnius Tech with a background in Psychology. He works at the intersection of interactive media, visual storytelling, and user experience design.</em></p>
+
+</article>
+
+<div class="article-cta">
+  <p>If you like my work and want to see more, support me on Ko-fi.</p>
+  <div class="article-cta-links">
+    <a href="https://ko-fi.com/levelupthedev" target="_blank" class="article-cta-link">Support on Ko-fi</a>
+    <a href="https://www.youtube.com/@fancyymultimedia" target="_blank" class="article-cta-link">YouTube</a>
+    <a href="https://www.linkedin.com/in/berkaykalender/" target="_blank" class="article-cta-link">LinkedIn</a>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Berkay Kalender</p>
+  <p>Game Design · Technical Art · Illustration</p>
+</footer>
+</body>
+</html>

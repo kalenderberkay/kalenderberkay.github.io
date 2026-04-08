@@ -58,7 +58,7 @@
     :root {
       --bg-dark: #0a0a0f;
       --bg-cursor: #31e7c3;
-      --bg-blue: #1a3aff;
+      --bg-blue: #31e7c3;
       --bg-elevated: #171930;
       --surface: #1c1c28;
       --text-white: #f5f2eb;
@@ -66,8 +66,11 @@
       --text-muted: #d3fffb;
       --accent-white: rgb(211, 224, 255);
       --accent-orange: #ff6a3d;
+      --accent-orange-2: #FF9270;
+      --font-blackorange: #252222;
       --accent-yellow: #ffd84d;
       --accent-pink: #ff3d6e;
+      --accent-cyan: #00e8d4;
       --font-display: 'Bebas Neue', sans-serif;
       --font-body: 'Space Grotesk', sans-serif;
       --font-serif: 'Instrument Serif', serif;
@@ -108,7 +111,6 @@
     }
 
     ::selection {
-      background: var(--accent-cyan);
       color: var(--bg-cursor);
     }
 
@@ -717,7 +719,7 @@
       position: relative;
       overflow: hidden;
       border-radius: 10px;
-      background: var(--bg-elevated);
+      background: var(--accent-yellow);
       border: 1px solid rgba(255, 255, 255, 0.05);
       transition: transform 0.5s var(--ease-expo), border-color 0.3s;
       display: block;
@@ -732,38 +734,7 @@
       position: relative;
       height: 180px;
       overflow: hidden;
-      background: var(--bg-elevated);
-    }
-
-    .work-card-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .work-card-img-overlay {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(10,10,15,0.35);
-      z-index: 1;
-      transition: background 0.4s;
-    }
-
-    .work-card:hover .work-card-img-overlay {
-      background: rgba(10,10,15,0.55);
-    }
-
-    .work-card-img-title {
-      font-family: var(--font-display);
-      font-size: 2.2rem;
-      letter-spacing: 0.05em;
-      color: var(--text-white);
-      text-shadow: 0 2px 20px rgba(0,0,0,0.6);
-      z-index: 2;
+      background: #0a0a0f;
     }
 
     .work-card-img canvas {
@@ -791,12 +762,13 @@
       font-size: 0.55rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: var(--accent-cyan);
+      color: var(--bg-elevated);
       margin-bottom: 0.4rem;
     }
 
     .work-card-title {
       font-family: var(--font-display);
+      color: var(--bg-elevated);
       font-size: 1.5rem;
       letter-spacing: 0.02em;
       margin-bottom: 0.3rem;
@@ -804,7 +776,7 @@
 
     .work-card-desc {
       font-size: 0.75rem;
-      color: var(--text-gray);
+      color: var(--bg-elevated);
       line-height: 1.6;
     }
 
@@ -844,13 +816,13 @@
     }
 
     .services .section-title {
-      color: var(--text-white);
+      color: var(--surface);
     }
 
     .services-intro {
       font-size: 1rem;
       max-width: 600px;
-      color: rgba(255, 255, 255, 0.7);
+      color: var(--surface);
       margin-bottom: 4rem;
       line-height: 1.7;
     }
@@ -982,7 +954,7 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1.2fr 0.8fr;
+      grid-template-columns: 1.3fr 1fr;
       gap: 4rem;
       align-items: start;
     }
@@ -993,8 +965,9 @@
       }
     }
 
-    .about-title-col .section-title {
+    .about-left .section-title {
       font-size: clamp(3rem, 7vw, 6rem);
+      margin-bottom: 2rem;
     }
 
     .about-bio p {
@@ -1016,12 +989,14 @@
     .about-roster h3 {
       font-family: var(--font-display);
       font-size: 1.3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
       letter-spacing: 0.03em;
+      text-align: center;
     }
 
     .roster-list {
       list-style: none;
+      text-align: center;
     }
 
     .roster-list li {
@@ -1088,8 +1063,8 @@
 
     .blog-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
       margin-top: 3rem;
     }
 
@@ -1100,24 +1075,27 @@
     }
 
     .blog-card {
-      background: var(--bg-elevated);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: #1c1e35;
+      border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 10px;
       overflow: hidden;
       transition: transform 0.4s var(--ease-expo), border-color 0.3s;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .blog-card:hover {
       transform: translateY(-4px);
-      border-color: rgba(0, 232, 212, 0.15);
+      border-color: rgba(0, 232, 212, 0.2);
     }
 
     .blog-card-img {
-      height: 180px;
+      height: 200px;
       overflow: hidden;
       position: relative;
-      background: var(--bg-elevated);
+      background: #141628;
+      flex-shrink: 0;
     }
 
     .blog-card-img img {
@@ -1136,15 +1114,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, var(--bg-elevated), #1a1a30);
+      background: linear-gradient(135deg, #1c1e35, #252848);
     }
-
     .blog-card-img.no-img::after {
       content: 'BLOG';
       font-family: var(--font-display);
       font-size: 1.5rem;
       color: var(--text-muted);
-      opacity: 0.4;
+      opacity: 0.3;
     }
 
     .blog-card-body {
@@ -1195,90 +1172,157 @@
     }
 
     /* ═══════════════════════════════════════════
-   KO-FI SUPPORT SECTION
+   SUPPORT / KO-FI SECTION
    ═══════════════════════════════════════════ */
     .support {
-      background: var(--bg-elevated);
-      padding: 5rem 3rem;
+      background: linear-gradient(135deg, #0f1a3d 0%, #162044 35%, #1a2d4a 65%, #0d3a3a 100%);
+      padding: 6rem 3rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .support::before {
+      content: '';
+      position: absolute;
+      top: -1px; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), #00ffaa, var(--accent-yellow));
     }
 
     .support-inner {
-      max-width: 800px;
+      max-width: 1100px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 3rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
       align-items: center;
-    }
-
-    @media (max-width: 900px) {
-      .support-inner { grid-template-columns: 1fr; }
-      .support { padding: 4rem 1.5rem; }
     }
 
     .support-text h2 {
       font-family: var(--font-display);
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--text-white);
+      font-size: clamp(2rem, 5vw, 3.2rem);
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
     }
 
     .support-text p {
-      font-size: 0.85rem;
-      color: var(--text-gray);
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
+      font-size: .88rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin-bottom: 1.8rem;
     }
 
     .support-cta {
       display: inline-flex;
       align-items: center;
-      gap: 0.6rem;
-      font-family: var(--font-body);
+      gap: .6rem;
       font-weight: 600;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
+      font-size: .75rem;
+      letter-spacing: .08em;
       text-transform: uppercase;
-      background: var(--accent-cyan, #00e8d4);
-      color: var(--bg-dark);
-      padding: 0.85rem 1.8rem;
+      background: linear-gradient(135deg, var(--accent-cyan), #00ffaa);
+      color: #0a0a0f;
+      padding: 0.85rem 2rem;
       border-radius: 6px;
-      transition: all 0.3s var(--ease-expo);
+      border: none;
+      transition: all .3s var(--ease-expo);
     }
 
     .support-cta:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 25px rgba(0,232,212,0.25);
+      box-shadow: 0 8px 30px rgba(0,232,212,0.3);
     }
 
     .support-panel {
-      background: var(--bg-dark);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 10px;
-      padding: 1.8rem;
+      background: rgba(10,10,15,0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(0,232,212,0.2);
+      border-radius: 14px;
+      padding: 2rem 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .support-panel::before {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 160px; height: 160px;
+      background: radial-gradient(circle, rgba(0,255,170,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .support-panel-header {
+      font-family: var(--font-mono);
+      font-size: .55rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin-bottom: 1.5rem;
+      padding-bottom: .8rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
     .support-panel-row {
       display: flex;
       justify-content: space-between;
-      padding: 0.5rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-      font-size: 0.75rem;
+      align-items: center;
+      padding: .7rem 0;
+      border-bottom: 1px solid rgba(255, 226, 226, 0);
     }
 
     .support-panel-row:last-child { border-bottom: none; }
 
     .support-panel-row .label {
-      color: var(--text-muted);
       font-family: var(--font-mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.1em;
+      font-size: .55rem;
+      letter-spacing: .1em;
       text-transform: uppercase;
+      color: var(--text-muted);
     }
 
     .support-panel-row .value {
-      color: var(--text-white);
       font-weight: 500;
+      font-size: .82rem;
+      text-align: right;
+    }
+
+    .support-panel-bar {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .support-panel-bar .bar-label {
+      font-family: var(--font-mono);
+      font-size: .5rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: .5rem;
+    }
+
+    .support-bar-track {
+      width: 100%;
+      height: 6px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .support-bar-fill {
+      height: 100%;
+      width: 15%;
+      background: linear-gradient(90deg, var(--accent-cyan), #00ffaa);
+      border-radius: 3px;
+      transition: width 1s var(--ease-expo);
+    }
+
+    @media (max-width: 900px) {
+      .support { padding: 4rem 1.5rem; }
+      .support-inner { grid-template-columns: 1fr; gap: 2rem; }
     }
 
     /* ═══════════════════════════════════════════
@@ -1415,6 +1459,7 @@
       <li><a href="#services" data-h>Services</a></li>
       <li><a href="#about" data-h>About</a></li>
       <li><a href="#blog" data-h>Blog</a></li>
+      <li><a href="#support" data-h>Support</a></li>
     </ul>
     <a href="#contact" class="nav-cta" data-h>Let's Talk</a>
     <button class="nav-burger" id="burger" aria-label="Menu" data-h>
@@ -1427,6 +1472,7 @@
     <a href="#services" class="mm-link">SERVICES</a>
     <a href="#about" class="mm-link">ABOUT</a>
     <a href="#blog" class="mm-link">BLOG</a>
+    <a href="#support" class="mm-link">SUPPORT</a>
     <a href="#contact" class="mm-link">CONTACT</a>
   </div>
 
@@ -1486,7 +1532,7 @@
             <div class="section-label rv">Selected Projects</div>
             <h2 class="section-title rv rv-d1">WORK</h2>
           </div>
-          <p class="rv rv-d2" style="max-width:400px; font-size:0.85rem; color:var(--text-gray); text-align:right;">
+          <p class="rv rv-d2" style="max-width:400px; font-size:0.85rem; color:var(--text-gray); text-align: right;">
             Games, cinematics, apps, and illustrations — each built where psychology meets the engine.
           </p>
         </div>
@@ -1556,14 +1602,15 @@
             <div class="work-card-img" data-distort>
               <img src="img/catio.jpg" alt="THE CATIO" onerror="this.style.display='none'">
               <div class="work-card-img-overlay">
-                <span class="work-card-img-title">THE CATIO</span>
+                <span class="work-card-img-title">FANCY STARS</span>
               </div>
               <canvas></canvas>
             </div>
             <div class="work-card-body">
               <div class="work-card-category">Game · Unity</div>
               <h3 class="work-card-title">THE CATIO</h3>
-              <p class="work-card-desc">2D platformer with hand-drawn sprite animation. Shipped via Google Game Academy.</p>
+              <p class="work-card-desc">2D platformer with hand-drawn sprite animation. Shipped via Google Game Academy.
+              </p>
             </div>
           </a>
 
@@ -1582,6 +1629,7 @@
             </div>
           </a>
         </div>
+      </div>  
     </div>
     </div>
   </section>
@@ -1621,8 +1669,8 @@
         </div>
 
         <div class="service-card rv rv-d2">
-          <div class="service-card-top" data-label="FILM">
-            <div class="service-icon" style="color:var(--accent-yellow);">FILM</div>
+          <div class="service-card-top" data-label="ANIMATION">
+            <div class="service-icon" style="color:var(--accent-yellow);">ANIMATION</div>
           </div>
           <div class="service-card-body">
             <div class="label">Service</div>
@@ -1650,11 +1698,10 @@
   <section class="about section-pad" id="about">
     <div class="container">
       <div class="about-grid">
-        <div class="about-title-col">
+        <div class="about-left">
           <h2 class="section-title rv rv-d1">ABOUT</h2>
-        </div>
 
-        <div class="about-bio rv rv-d2">
+          <div class="about-bio rv rv-d2">
           <p>
             <strong>Hey there, I'm Berkay!</strong><br>
             — <span class="hl">a game designer and technical artist with a background in psychology</span>
@@ -1682,20 +1729,20 @@
             <strong>Open to opportunities in game design, technical art, and interactive media — let's connect.</strong>
           </p>
         </div>
+        </div>
 
         <div class="about-roster rv rv-d3">
           <h3>TOOLKIT</h3>
           <ul class="roster-list">
             <li>Unreal Engine 5</li>
             <li>Unity / C#</li>
+            <li>Blender</li>
+            <li>Figma</li>
             <li>Clip Studio Paint</li>
             <li>Adobe Photoshop</li>
             <li>Adobe Animate</li>
-            <li>Blender</li>
             <li>ComfyUI / SD</li>
             <li>Flutter / Dart</li>
-            <li>Figma</li>
-            <li>n8n Automation</li>
             <li>AutoCAD</li>
           </ul>
 
@@ -1703,7 +1750,7 @@
           <ul class="roster-list">
             <li>Google Game Academy</li>
             <li>Harvard CS50</li>
-            <li>GGJ Lithuania 2026</li>
+            <li>Global Game Jam Lithuania 2026</li>
             <li>Bilgi University · Psychology (Honors)</li>
             <li>VilniusTech · Multimedia Design</li>
           </ul>
@@ -1717,17 +1764,17 @@
           <span class="awards-ticker-item">TECHNICAL ART <span class="dot"></span></span>
           <span class="awards-ticker-item">ILLUSTRATION <span class="dot"></span></span>
           <span class="awards-ticker-item">CINEMATICS <span class="dot"></span></span>
-          <span class="awards-ticker-item">UNREAL ENGINE <span class="dot"></span></span>
+          <span class="awards-ticker-item">AI PIPELINES <span class="dot"></span></span>
           <span class="awards-ticker-item">PSYCHOLOGY <span class="dot"></span></span>
-          <span class="awards-ticker-item">BLENDER <span class="dot"></span></span>
+          <span class="awards-ticker-item">UE5 <span class="dot"></span></span>
           <span class="awards-ticker-item">UNITY <span class="dot"></span></span>
           <span class="awards-ticker-item">GAME DESIGN <span class="dot"></span></span>
           <span class="awards-ticker-item">TECHNICAL ART <span class="dot"></span></span>
           <span class="awards-ticker-item">ILLUSTRATION <span class="dot"></span></span>
           <span class="awards-ticker-item">CINEMATICS <span class="dot"></span></span>
+          <span class="awards-ticker-item">AI PIPELINES <span class="dot"></span></span>
           <span class="awards-ticker-item">PSYCHOLOGY <span class="dot"></span></span>
-          <span class="awards-ticker-item">UNREAL ENGINE <span class="dot"></span></span>
-          <span class="awards-ticker-item">BLENDER <span class="dot"></span></span>
+          <span class="awards-ticker-item">UE5 <span class="dot"></span></span>
           <span class="awards-ticker-item">UNITY <span class="dot"></span></span>
         </div>
       </div>
@@ -1737,19 +1784,18 @@
   <!-- ═══════ BLOG (SEO) ═══════ -->
   <section class="blog section-pad" id="blog">
     <div class="container">
-      <div class="section-label rv">Blog</div>
       <h2 class="section-title rv rv-d1">BLOG</h2>
 
       <div class="blog-grid">
         <article>
-          <a href="blog/elevate-storytelling.html" class="blog-card rv" data-h>
+          <a href="blog/new-website-new-chapter.html" class="blog-card rv" data-h>
             <div class="blog-card-img">
-              <img src="img/blog/storytelling.jpg" alt="Elevate Storytelling" onerror="this.parentElement.classList.add('no-img')">
+              <img src="img/blog/new-website.jpg" alt="New Website" onerror="this.parentElement.classList.add('no-img')">
             </div>
             <div class="blog-card-body">
-              <time class="blog-card-date">Feb 23, 2026</time>
-              <h3 class="blog-card-title">Elevate Storytelling with Cutting-Edge Multimedia Techniques</h3>
-              <p class="blog-card-excerpt">Stop scrolling. Seriously. You're about to dive into something that could transform how you tell stories.</p>
+              <time class="blog-card-date">Apr 8, 2026</time>
+              <h3 class="blog-card-title">New Website, New Chapter</h3>
+              <p class="blog-card-excerpt">I rebuilt my portfolio from scratch, launched a Ko-fi page, and I'm sharing what's next for my game dev journey.</p>
               <span class="blog-card-read">Read More →</span>
             </div>
           </a>
@@ -1763,7 +1809,7 @@
             <div class="blog-card-body">
               <time class="blog-card-date">Feb 6, 2026</time>
               <h3 class="blog-card-title">48 Hours to Build Something That Scares Me</h3>
-              <p class="blog-card-excerpt">A Solo Developer's Journey Through Global Game Jam 2026. The countdown started at 5 PM on Friday.</p>
+              <p class="blog-card-excerpt">A solo developer's journey through Global Game Jam 2026. Psychology-driven horror, 48 hours, one theme.</p>
               <span class="blog-card-read">Read More →</span>
             </div>
           </a>
@@ -1777,49 +1823,21 @@
             <div class="blog-card-body">
               <time class="blog-card-date">Jul 14, 2025</time>
               <h3 class="blog-card-title">How I Created My First Cinematic Cutscene in Unreal Engine</h3>
-              <p class="blog-card-excerpt">When I got the assignment to create a cinematic cutscene in Unreal Engine, I had zero real experience with it.</p>
+              <p class="blog-card-excerpt">From zero 3D experience to a full cinematic in UE5. MetaHuman, Sequencer, and a lot of crashes.</p>
               <span class="blog-card-read">Read More →</span>
             </div>
           </a>
         </article>
 
         <article>
-          <a href="blog/mario-ultrastar-10-years.html" class="blog-card rv" data-h>
+          <a href="blog/mario-ultrastar-10-years.html" class="blog-card rv rv-d3" data-h>
             <div class="blog-card-img">
               <img src="img/blog/mario-ultrastar.jpg" alt="Mario Ultrastar" onerror="this.parentElement.classList.add('no-img')">
             </div>
             <div class="blog-card-body">
               <time class="blog-card-date">Sep 3, 2024</time>
-              <h3 class="blog-card-title">Celebrating 10 Years of Mario Ultrastar: A Remastered Sprite Animation Series</h3>
-              <p class="blog-card-excerpt">A decade of pixel art, animation, and creative evolution — remastered and revisited for a new generation.</p>
-              <span class="blog-card-read">Read More →</span>
-            </div>
-          </a>
-        </article>
-
-        <article>
-          <a href="blog/designing-relatable-characters.html" class="blog-card rv rv-d1" data-h>
-            <div class="blog-card-img">
-              <img src="img/blog/characters.jpg" alt="Character Design" onerror="this.parentElement.classList.add('no-img')">
-            </div>
-            <div class="blog-card-body">
-              <time class="blog-card-date">Aug 22, 2024</time>
-              <h3 class="blog-card-title">About Designing Relatable and Unique Characters</h3>
-              <p class="blog-card-excerpt">As a writer and illustrator working on a webcomic, I know that character design goes far beyond just how a character looks.</p>
-              <span class="blog-card-read">Read More →</span>
-            </div>
-          </a>
-        </article>
-
-        <article>
-          <a href="blog/video-art-online.html" class="blog-card rv rv-d2" data-h>
-            <div class="blog-card-img">
-              <img src="img/blog/video-art.jpg" alt="Video Art Online" onerror="this.parentElement.classList.add('no-img')">
-            </div>
-            <div class="blog-card-body">
-              <time class="blog-card-date">Feb 19, 2026</time>
-              <h3 class="blog-card-title">Creating Impactful Video Art Online</h3>
-              <p class="blog-card-excerpt">In the digital age, video art has become a powerful medium for creative expression and compelling visual stories.</p>
+              <h3 class="blog-card-title">Celebrating 10 Years of Mario Ultrastar: A Remastered Series</h3>
+              <p class="blog-card-excerpt">The 10th anniversary of my first sprite animation series. Remastered, revisited, and ready for YouTube.</p>
               <span class="blog-card-read">Read More →</span>
             </div>
           </a>
@@ -1844,6 +1862,7 @@
         </a>
       </div>
       <div class="support-panel rv rv-d2">
+        <div class="support-panel-header">// DEV STATUS</div>
         <div class="support-panel-row">
           <span class="label">Status</span>
           <span class="value">Student / Indie Dev</span>
@@ -1854,11 +1873,17 @@
         </div>
         <div class="support-panel-row">
           <span class="label">Support Bonus</span>
-          <span class="value">Faster renders, more projects</span>
+          <span class="value">Faster renders, more shipped work</span>
         </div>
         <div class="support-panel-row">
           <span class="label">Reward</span>
           <span class="value">You help the next project exist</span>
+        </div>
+        <div class="support-panel-bar">
+          <div class="bar-label">Next Level Progress</div>
+          <div class="support-bar-track">
+            <div class="support-bar-fill"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -1878,7 +1903,11 @@
       <a href="https://www.youtube.com/@fancyymultimedia" target="_blank" class="c-link" data-h>YouTube</a>
       <a href="http://www.instagram.com/fancy.multimedia/" target="_blank" class="c-link" data-h>Instagram</a>
       <a href="https://www.upwork.com/freelancers/~01f688431e3e1dfc50" target="_blank" class="c-link" data-h>Upwork</a>
-      <a href="https://ko-fi.com/levelupthedev" target="_blank" class="c-link" data-h>☕ Support on Ko-fi</a>
+    </div>
+    <div class="rv rv-d4" style="text-align:center; margin-top:2rem;">
+      <a href="https://ko-fi.com/levelupthedev" target="_blank" class="support-cta" data-h>
+        Support Me on Ko-fi
+      </a>
     </div>
   </section>
 
@@ -2107,6 +2136,15 @@
       }, { passive: true });
 
     })();
+  </script>
+  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+  <script>
+    kofiWidgetOverlay.draw('levelupthedev', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#ffffff',
+      'floating-chat.donateButton.text-color': '#323842'
+    });
   </script>
 </body>
 
